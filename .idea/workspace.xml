@@ -10,13 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-05-12-lorem-ipsum.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2017-05-12-lorem-ipsum.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/tag.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2012-07-31-lorem-ipsum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2014-05-12-lorem-ipsum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2015-07-31-lorem-ipsum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2016-07-31-lorem-ipsum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2017-05-12-lorem-ipsum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2012/07/31/lorem-ipsum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2014/05/12/lorem-ipsum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2015/07/31/lorem-ipsum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2016/07/31/lorem-ipsum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2017/05/12/lorem-ipsum.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/atom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/atom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tag/css/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tags.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580797167016</updated>
       <workItem from="1580797169649" duration="4346000" />
-      <workItem from="1580804400270" duration="23000" />
+      <workItem from="1580804400270" duration="1007000" />
     </task>
     <servers />
   </component>
