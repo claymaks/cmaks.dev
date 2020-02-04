@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Remaining essentially unchanged
+title: Hello, World!
 description: Lorem Ipsum is simply dummy text
 summary: Lorem Ipsum is simply dummy text.
 tags: [css]

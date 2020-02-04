@@ -4,7 +4,7 @@
  <title>cmaks</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-02-04T02:57:19-05:00</updated>
+ <updated>2020-02-04T03:20:23-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Clayton Maksymiuk</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Remaining essentially unchanged</title>
+   <title>Hello, World!</title>
    <link href="http://localhost:4000/2017/05/12/lorem-ipsum"/>
    <updated>2017-05-12T00:00:00-04:00</updated>
    <id>http://localhost:4000/2017/05/12/lorem-ipsum</id>
