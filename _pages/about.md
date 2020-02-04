@@ -3,23 +3,49 @@ layout: page
 title: about
 ---
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
 
 <div style="text-align: center; font-size: 20px;">
 <img src="/assets/img/website.png"  alt="me"/>
-Clayton Maksymiuk
+
+<div class = "row">
+    <div class = "column">
+        <a href="https://www.github.com/claymaks"><img src="/assets/img/github.svg" height="20px" alt="github"/></a>
+    </div>
+    <div class = "column">  
+        <a href="https://www.linkedin.com/in/cmaks"><img src="/assets/img/linkedin.svg" height="20px" alt="linkedin"/></a>
+    </div>
+    <div class = "column">  
+        <a href="/assets/pdf/ClaytonMaksymiukResume.pdf"><img src="/assets/img/resume.svg" height="20px" alt="resume"/></a>
+    </div>
+    <div class = "column">  
+        <a href="mailto:contact@cmaks.dev"><img src="/assets/img/mail.svg" height="20px" alt="mail"/></a>
+    </div>
 </div>
-Colorful, minimal one-column portfolio/blog theme built for Jekyll. Perfect for your personal website, blog and portfolio.
 
-### Key features
+Clayton Maksymiuk<br>
+</div>
+<div style="text-align: center; font-size: 15px;">
+Computer Science Engineering major @ the University of Michigan
+</div>
 
-- seo optimized
-- portfolio/blog/tag pages
-- AAA, 100/100 scores on Lighthouse, Gmetrix and Webpagetest
-- responsive
-- inline css
-- compressed css, html
-- sitemap
-- robots.txt
-- atom feed
-- json feed
-- http security headers
+### Hi, I'm Clay!
+I'm a sophomore studying Computer Science and Mathematics at the University of Michigan.  Currently, I'm working at Fisher Dynamics leading the development of autonomous robots to make factories more efficient.
+
+Contact me if you'd like to work together on a project!

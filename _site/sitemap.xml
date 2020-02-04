@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/about</loc>
-<lastmod>2020-02-04T03:44:20-05:00</lastmod>
+<lastmod>2020-02-04T04:34:56-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/projects</loc>
-<lastmod>2020-02-04T03:44:20-05:00</lastmod>
+<lastmod>2020-02-04T04:34:56-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/projects/project-one</loc>
@@ -22,5 +22,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/assets/pdf/ClaytonMaksymiukResume.pdf</loc>
+<lastmod>2020-01-29T21:57:52-05:00</lastmod>
 </url>
 </urlset>
