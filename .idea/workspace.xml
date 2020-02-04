@@ -9,7 +9,34 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="" />
+    <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/_layouts/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/tag.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/tags.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2012-07-31-lorem-ipsum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2014-05-12-lorem-ipsum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2015-07-31-lorem-ipsum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2016-07-31-lorem-ipsum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2017-05-12-lorem-ipsum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2012/07/31/lorem-ipsum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2014/05/12/lorem-ipsum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2015/07/31/lorem-ipsum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2016/07/31/lorem-ipsum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2017/05/12/lorem-ipsum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/atom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/atom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/project-one.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/project-one.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/project-three.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/project-three.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/project-two.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/project-two.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tag/css/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tags.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
