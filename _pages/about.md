@@ -22,20 +22,20 @@ title: about
 </style>
 
 <div style="text-align: center; font-size: 20px;">
-<img src="/assets/img/website.png"  alt="me"/>
+<img src="/assets/img/about/website.png"  alt="me"/>
 
 <div class = "row">
     <div class = "column">
-        <a href="https://www.github.com/claymaks"><img src="/assets/img/github.svg" height="20px" alt="github"/></a>
+        <a href="https://www.github.com/claymaks"><img src="/assets/img/about/github.svg" height="20px" alt="github"/></a>
     </div>
     <div class = "column">  
-        <a href="https://www.linkedin.com/in/cmaks"><img src="/assets/img/linkedin.svg" height="20px" alt="linkedin"/></a>
+        <a href="https://www.linkedin.com/in/cmaks"><img src="/assets/img/about/linkedin.svg" height="20px" alt="linkedin"/></a>
     </div>
     <div class = "column">  
-        <a href="/assets/pdf/ClaytonMaksymiukResume.pdf"><img src="/assets/img/resume.svg" height="20px" alt="resume"/></a>
+        <a href="/assets/pdf/ClaytonMaksymiukResume.pdf"><img src="/assets/img/about/resume.svg" height="20px" alt="resume"/></a>
     </div>
     <div class = "column">  
-        <a href="mailto:contact@cmaks.dev"><img src="/assets/img/mail.svg" height="20px" alt="mail"/></a>
+        <a href="mailto:contact@cmaks.dev"><img src="/assets/img/about/mail.svg" height="20px" alt="mail"/></a>
     </div>
 </div>
 

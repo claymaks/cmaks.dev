@@ -23,9 +23,16 @@ social:
   
 permalink: pretty
 
-disqus:
-  name: "your disqus username" # required
-  noscript: "Please enable JavaScript to view the comments powered by Disqus." # optional
+comments:
+  provider: gitalk
+  gitalk:
+    clientID    : "e26593f9a3a79377f58d"
+    clientSecret: "3dfdadb3c73f77ff6ba1686da5a5d48dc7deaadc"
+    repository  : "cmaks.dev"
+    owner       : "claymaks"
+    admin: # Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
+      - "claymaks"
+
 
 baseurl:             ""
 
