@@ -1,66 +1,82 @@
 html {
   box-sizing: border-box;
-  margin:0; 
+  margin:0;
   padding:0;
 
 }
 html, html[data-theme="light"] {
   --main-background-color: rgb(237, 242, 247);
   --text: #495057;
+  --imbb:  rgb(228, 228, 234);
+  --imbg:  rgb(255, 255, 255);
+  --imt:   rgb(25,25,25);
+  --imlink: rgb(60,105,215)
 }
 
 html[data-theme="dark"] {
   --main-background-color: rgb(59, 59, 67);
   --text: rgb(237, 242, 247);
+  --imbb:  rgb(86, 86, 86);
+  --imbg:  rgb(47, 49, 51);
+  --imt:   rgb(255,255,255);
+  --imlink: rgb(119, 156, 215);
 }
 
 @media (prefers-color-scheme: dark) {
   html, html[data-theme="dark"] {
     --main-background-color: rgb(59, 59, 67);
     --text: rgb(237, 242, 247);
+    --imbb:  rgb(86, 86, 86);
+    --imbg:  rgb(47, 49, 51);
+    --imt:   rgb(255,255,255);
+    --imlink: rgb(119, 156, 215);
   }
 
   html[data-theme="light"] {
     --main-background-color: rgb(237, 242, 247);
     --text: #495057;
+    --imbb:  rgb(228, 228, 234);
+    --imbg:  rgb(255, 255, 255);
+    --imt:   rgb(25,25,25);
+    --imlink: rgb(60,105,215);
   }
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 body {
-    background-color: var(--main-background-color);
-    color: var(--text);
+  background-color: var(--main-background-color);
+  color: var(--text);
 }
 
 header, main {
-	margin: 0 auto;
-    max-width: 50rem;
+  margin: 0 auto;
+  max-width: 50rem;
 }
 .grid {
-    display: flex;
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(10rem,auto);
-    grid-gap: 1rem
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(10rem,auto);
+  grid-gap: 1rem
 }
 
 .card {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    min-height: 10rem;
-    position: relative;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    flex: 1 1 10rem
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  min-height: 10rem;
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  flex: 1 1 10rem
 }
 
 @supports (display:grid) {
-    .card {
-        margin: 0
-    }
+  .card {
+    margin: 0
+  }
 }
 .card:nth-child(1n) {
   background: #96d0c3;
@@ -121,10 +137,10 @@ header, main {
 }
 
 .card a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
-.card p { 
+.card p {
   font-size: 0.9rem;
 }
 
@@ -141,76 +157,180 @@ header, main {
 }
 
 .card .meta {
-   padding: 2rem;
-   display: flex;
-  
+  padding: 2rem;
+  display: flex;
+
   flex: 1;
   justify-content: space-between;
   flex-direction: column;
 }
 
 .post {
-	background: white;
-    color: rgb(59, 59, 67);
-	padding: 2rem 3rem;
-	-webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+  background: white;
+  color: rgb(59, 59, 67);
+  padding: 2rem 3rem;
+  -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
-	
+
+}
+
+.imessage {
+  margin-left: 30%;
+  margin-right: 30%;
+  background: var(--imbg);
+  color:  var(--imt);
+  border-radius: 10px;
+}
+
+
+a.imlink {
+  color: var(--imlink) !important;
 }
 
 .card {
-	transition: all 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: all 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
   &:hover {
     transform: scale(1.02);
   }
 }
 ul, ol {
-	padding: 0;
-	list-style-position: inside;
+  padding: 0;
+  list-style-position: inside;
 }
 
 table {
-    border-collapse: collapse;
-    text-align: left;
-    width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
 
-    tr {
-        border-bottom: 1px solid black;
-    }
+  tr {
+    border-bottom: 1px solid black;
+  }
 
-    td {
-        padding: 0.5rem;
-    }
+  td {
+    padding: 0.5rem;
+  }
 }
 
 img {
-    width: 100%;
-    margin: 0.5rem 0;
+  width: 100%;
+  margin: 0.5rem 0;
 }
 
 nav {
-    ul {
-        list-style: none !important;
-        padding: 0;
-        text-align: right;
+  ul {
+    list-style: none !important;
+    padding: 0;
+    text-align: right;
 
-        li {
-            display: inline-block;
-        }
+    li {
+      display: inline-block;
     }
-    a, a:visited {
-        margin: 0.5rem;
-        text-decoration: none;
-	    text-transform: uppercase;
-	    color: inherit;
-	    font-size: 0.8rem;
-	    font-weight: 500;
-	    letter-spacing: .05em;
-	    //opacity: 0.6;
-    }
+  }
+  a, a:visited {
+    margin: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: .05em;
+    //opacity: 0.6;
+  }
 }
 
 footer {
-    margin: 1rem 0;
-    text-align: center;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.chat {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.messages {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.yours {
+  align-items: flex-start;
+}
+
+.yours .message {
+  margin-right: 25%;
+  background: var(--imbb);
+  position: relative;
+}
+
+.yours .message.last:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: -7px;
+  height: 20px;
+  width: 20px;
+  background: var(--imbb);
+  border-bottom-right-radius: 15px;
+}
+.yours .message.last:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -10px;
+  width: 10px;
+  height: 20px;
+  background: var(--imbg);
+  border-bottom-right-radius: 10px;
+}
+
+.mine {
+  align-items: flex-end;
+}
+
+.mine .message {
+  color: var(--imbb);
+  margin-left: 25%;
+  background: var(--imbb);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.mine .message.last:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: -8px;
+  height: 20px;
+  width: 20px;
+  background: var(--imbb);
+  background-attachment: fixed;
+  border-bottom-left-radius: 15px;
+}
+
+.mine .message.last:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -10px;
+  width: 10px;
+  height: 20px;
+  background: var(--imbg);
+  border-bottom-left-radius: 10px;
 }
