@@ -11,18 +11,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e10434da06f81e7310f6967e100a2c010f336fcb/_layout.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/e10434da06f81e7310f6967e100a2c010f336fcb/_layout.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/phone.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/phone.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2019-05-13-Data-Analysis.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2019-05-13-Data-Analysis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2020-01-01-http-dp.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2020-01-01-http-dp.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/atom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/atom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/bezier.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/bezier.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/projects/data-analysis.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/data-analysis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/http-dp.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/http-dp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/scripts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580797167016</updated>
       <workItem from="1580797169649" duration="4346000" />
-      <workItem from="1580882064265" duration="11147000" />
+      <workItem from="1580882064265" duration="11415000" />
     </task>
     <servers />
   </component>
