@@ -174,9 +174,14 @@ header, main {
 
 }
 
+.imessagecontainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .imessage {
-  margin-left: 250px;
-  margin-right: 250px;
   background: var(--imbg);
   color:  var(--imt);
   border-radius: 10px;
