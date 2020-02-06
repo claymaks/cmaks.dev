@@ -8,7 +8,6 @@ layout: default
 
     <article role="article" class="card" >
       <a href="{{ site.baseurl }}{{ project.url }}">
-        <div class="link">
 	    <div class="meta">
       <h2>
         {{ project.title }}
@@ -16,7 +15,6 @@ layout: default
       <p>{{ project.summary }}</p>
         <time class="date" datetime="{{ project.date | date_to_xmlschema }}">{{ project.date | date: "%Y" }} &middot; {{ project.category }}</time>
 	    </div>
-        </div>
       </a>
     </article>
 
