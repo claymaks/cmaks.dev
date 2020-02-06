@@ -53,7 +53,7 @@ different hardware (Arduino, Raspberry Pi, HERO), and servers (Flask, RESTful AP
 I'm incredibly passionate about the work that I do and love working with people 
 who allow that passion to grow.
 
-I'm currently looking for opportunities that allow me to develop my abilities programming
+I'm currently looking for opportunities that will allow me to develop my abilities programming
 autonomous systems, along with creating more secure systems.
 
 Contact me if you'd like to work together on a project!
