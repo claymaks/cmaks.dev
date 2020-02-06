@@ -7,7 +7,7 @@ layout: default
 
   {% for project in site.projects reversed %}
 
-    <article role="article" class="card" onclick="window.location.href = '{{ site.baseurl }}{{ project.url }}';">
+    <article role="article" class="card" onclick="window.location.href = '{{ site.baseurl }}{{ project.url }}';" style="cursor: grab;">
         <a href="{{ site.baseurl }}{{ project.url }}" >
 	    <div class="meta">
       <h2>
