@@ -48,8 +48,8 @@ Computer Science Engineering major @ the University of Michigan
 ### Hi, I'm Clay!
 I'm a sophomore studying Computer Science and Mathematics at the University of Michigan.  Currently, I'm working at Fisher Dynamics, leading the development of autonomous 
 robots to begin to automate factories.  Through this, I've worked with several 
-languages (Python, C++, C#), several communication protocols (UART, I2C, SPI), 
-hardware (Arduino, Raspberry Pi, HERO), and servers (Flask, RESTful APIs). 
+languages (Python, C++, C#), communication protocols (UART, I2C, SPI), 
+different hardware (Arduino, Raspberry Pi, HERO), and servers (Flask, RESTful APIs). 
 I'm incredibly passionate about the work that I do and love working with people 
 who allow that passion to grow.
 
