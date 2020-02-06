@@ -7,7 +7,7 @@ category: python, c++, c#, flask, arduino, hero, raspberry pi
 ---
 
 
-For the past 7 months, I have been leading the development of custom autonomously guided
+For the past seven months, I have been leading the development of custom autonomously guided
 vehicles at Fisher Dynamics.  I've implemented several communication protocols to interface
 multiple microcontrollers and microcomputers, interfaced with and created my own vision
  systems for safety, and created custom servers to handle requests coming from the
