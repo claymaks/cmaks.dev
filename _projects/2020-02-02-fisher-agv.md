@@ -1,8 +1,8 @@
 ---
 layout: project
 title: Fisher AGV
-description: Autonomous Guided Vehicle made at Fisher Dynamics.
-summary: Autonomous Guided Vehicle made at Fisher Dynamics.
+description: Autonomously Guided Vehicle made at Fisher Dynamics.
+summary: Autonomously Guided Vehicle made at Fisher Dynamics.
 category: python, c++, c#, flask, arduino, hero, raspberry pi
 ---
 
