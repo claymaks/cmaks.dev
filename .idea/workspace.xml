@@ -11,7 +11,28 @@
   <component name="ChangeListManager">
     <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e10434da06f81e7310f6967e100a2c010f336fcb/_layout.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/e10434da06f81e7310f6967e100a2c010f336fcb/_layout.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2020-01-01-http-dp.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2020-01-01-http-dp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/atom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/atom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/ascii-converter.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/ascii-converter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/bezier.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/bezier.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/data-analysis.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/data-analysis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/fisher-agv.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/fisher-agv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/halflife.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/halflife.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/http-dp.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/http-dp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/huffman.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/huffman.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/scout.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/scout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/scripts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/word-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/word-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +94,7 @@
       <workItem from="1580797169649" duration="4346000" />
       <workItem from="1580882064265" duration="11540000" />
       <workItem from="1580937127602" duration="37000" />
-      <workItem from="1580960561992" duration="11302000" />
+      <workItem from="1580960561992" duration="13330000" />
     </task>
     <servers />
   </component>

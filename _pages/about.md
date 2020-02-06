@@ -56,4 +56,4 @@ who allow that passion to grow.
 I'm currently looking for opportunities that will allow me to develop my abilities programming
 autonomous systems, along with creating more secure systems.
 
-Contact me if you'd like to work together on a project!
+<a href="mailto:contact@cmaks.dev">Contact me</a> if you'd like to work together on a project!
