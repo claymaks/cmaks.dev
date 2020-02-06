@@ -42,7 +42,7 @@ title: about
 Clayton Maksymiuk<br>
 </div>
 <div style="text-align: center; font-size: 15px;">
-Computer Science Engineering major @ the University of Michigan
+Computer Science Engineering major, Mathematics minor @ the University of Michigan
 </div>
 
 ### Hi, I'm Clay!
@@ -54,6 +54,6 @@ I'm incredibly passionate about the work that I do and love working with people
 who allow that passion to grow.
 
 I'm currently looking for opportunities that will allow me to develop my abilities programming
-autonomous systems, along with creating more secure systems.
+autonomous operations, along with creating more secure systems.
 
 <a href="mailto:contact@cmaks.dev">Contact me</a> if you'd like to work together on a project!
