@@ -2,20 +2,22 @@
 layout: default
 ---
 
+<div style="text-align: center;"><h2>Click to find out more</h2></div>
 <div class="grid">
 
   {% for project in site.projects reversed %}
 
     <article role="article" class="card" >
-      <a href="{{ site.baseurl }}{{ project.url }}" class="link">
+        <a href="{{ site.baseurl }}{{ project.url }}" >
 	    <div class="meta">
       <h2>
+
         {{ project.title }}
       </h2>
       <p>{{ project.summary }}</p>
         <time class="date" datetime="{{ project.date | date_to_xmlschema }}">{{ project.date | date: "%Y" }} &middot; {{ project.category }}</time>
 	    </div>
-      </a>
+        </a>
     </article>
 
     
