@@ -1,0 +1,18 @@
+{% if site.github_username %}
+<div id="gitalk-container"></div>     <script type="text/javascript">
+  var gitalk = new Gitalk({
+
+    // gitalk's main params
+    clientID: `e26593f9a3a79377f58d`,
+    clientSecret: `3dfdadb3c73f77ff6ba1686da5a5d48dc7deaadc`,
+    repo: `cmaks.dev`,
+    owner: 'claymaks',
+    admin: ['claymaks'],
+    id: location.pathname,
+    distractionFreeMode: true
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://gitalk.github.io/">comments powered by Gitalk.</a></noscript>
+{% endif %}

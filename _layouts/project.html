@@ -8,5 +8,7 @@ layout: default
   <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y" }} &middot; {{ page.category }}</time>
   <div class="meta">
   {{ content }}
+    {% include comment.html %}
+  </div>
 </article>
 

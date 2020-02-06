@@ -1,7 +1,7 @@
 site: cmaks
 url: 
 author: Clayton Maksymiuk
-author:
+author: Clayton Maksymiuk
   name: Clayton Maksymiuk
   email: 
   url: 
@@ -22,17 +22,8 @@ social:
     - https://github.com/claymaks
   
 permalink: pretty
-
-comments:
-  provider: gitalk
-  gitalk:
-    clientID    : "e26593f9a3a79377f58d"
-    clientSecret: "3dfdadb3c73f77ff6ba1686da5a5d48dc7deaadc"
-    repository  : "cmaks.dev"
-    owner       : "claymaks"
-    admin: # Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
-      - "claymaks"
-
+github_username: claymaks
+url: https://cmaks.dev
 
 baseurl:             ""
 

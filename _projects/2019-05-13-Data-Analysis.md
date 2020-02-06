@@ -11,6 +11,8 @@ Throughout my summer 2019 internship at Fisher Dynamics, I assisted engineers in
 data analysis by building scripts and tools to speed up the process.
 
 ![CPA](/assets/img/pro/cpa/cpa_pic.png)
+
+
 <style>
 html, body {
     height:100%;
@@ -22,7 +24,7 @@ html, body {
     height:100%;
 }
 .h_iframe {
-    height: 100%;
+    height: 400px;
     width:100%;
 }
 </style>
