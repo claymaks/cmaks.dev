@@ -46,14 +46,17 @@ Computer Science Engineering major, Mathematics minor @ the University of Michig
 </div>
 
 ### Hi, I'm Clay!
-I'm a sophomore studying Computer Science and Mathematics at the University of Michigan.  Currently, I'm working at Fisher Dynamics, leading the development of autonomous 
-robots to begin to automate factories.  Through this, I've worked with several 
-languages (Python, C++, C#), communication protocols (UART, I2C, SPI), 
-different hardware (Arduino, Raspberry Pi, HERO), and servers (Flask, RESTful APIs). 
+I'm a Junior studying Computer Science and Mathematics at the University of Michigan.
+I started programming PLC-based factory machines freshman year of highschool, and quickly
+developed a passion towards improving efficiency. My background is in robotics and autonomous 
+systems and I am currently working at Fisher Dynamics leading the development of their <a href="/projects/fisher-agv" >autonomously 
+guided vehicle system</a>.  Fixated on automating away my life,  I founded <a href="/projects/dario" >Dario LLC</a> with my roommates to
+better schedule meetings.  
+
 I'm incredibly passionate about the work that I do and love working with people 
 who allow that passion to grow.
 
-I'm currently looking for opportunities that will allow me to develop my abilities programming
-autonomous operations, along with creating more secure systems.
+I'm currently looking for opportunities that will allow me to develop my abilities using computer 
+vision and programming autonomous systems.
 
 <a href="mailto:contact@cmaks.dev">Contact me</a> if you'd like to work together on a project!
