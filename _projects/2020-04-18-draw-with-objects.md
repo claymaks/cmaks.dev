@@ -25,11 +25,6 @@ html, body {
 }
 </style>
 <div class = "row">
-    <div class = "column">
-        <div class="h_iframe">
-            <iframe src="https://drive.google.com/file/d/1kKDVF27CX8rzBIiApETkisNAlzXkqAKg/preview" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
     <div class = "column">  
         <div class="h_iframe">
             <iframe src="https://drive.google.com/file/d/1cwvA47P5aetswPSvQgL_SJw0ycknTUxH/preview" frameborder="0" allowfullscreen></iframe>

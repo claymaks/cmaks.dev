@@ -10,16 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_projects/2020-05-01-dario.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/pro/dario/Dario-logo-color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/pro/dario/dario-backgrounds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/pro/dario/options.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/atom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/atom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2020-04-18-draw-with-objects.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2020-04-18-draw-with-objects.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +76,7 @@
       <workItem from="1580882064265" duration="11540000" />
       <workItem from="1580937127602" duration="37000" />
       <workItem from="1580960561992" duration="16646000" />
-      <workItem from="1595988622309" duration="1740000" />
+      <workItem from="1595988622309" duration="1866000" />
     </task>
     <servers />
   </component>
