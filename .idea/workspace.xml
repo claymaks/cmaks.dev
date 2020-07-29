@@ -9,12 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2020-05-01-dario.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2020-05-01-dario.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/about/website.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/about/website.png" afterDir="false" />
-    </list>
+    <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,17 +47,17 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/img/pro/dario" />
-      <recent name="$PROJECT_DIR$/_projects" />
-      <recent name="$PROJECT_DIR$/_includes" />
-      <recent name="$PROJECT_DIR$/_layouts" />
-      <recent name="$PROJECT_DIR$/assets/img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/img/pro/dario" />
       <recent name="$PROJECT_DIR$/assets/img/pro" />
       <recent name="$PROJECT_DIR$/assets/img/scout" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img/about" />
+      <recent name="$PROJECT_DIR$/assets/img/pro/dario" />
+      <recent name="$PROJECT_DIR$/_projects" />
+      <recent name="$PROJECT_DIR$/_includes" />
+      <recent name="$PROJECT_DIR$/_layouts" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -81,7 +76,7 @@
       <workItem from="1580960561992" duration="16646000" />
       <workItem from="1595988622309" duration="1942000" />
       <workItem from="1595991263910" duration="6000" />
-      <workItem from="1595994130898" duration="896000" />
+      <workItem from="1595994130898" duration="1140000" />
     </task>
     <servers />
   </component>
