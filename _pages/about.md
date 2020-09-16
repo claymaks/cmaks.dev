@@ -32,10 +32,10 @@ title: about
         <a href="https://www.linkedin.com/in/cmaks" target="_blank"><img src="/assets/img/about/linkedin.svg" height="20px" alt="linkedin"/></a>
     </div>
     <div class = "column">  
-        <a href="/assets/pdf/ClaytonMaksymiukResume.pdf" target="_blank"><img src="/assets/img/about/resume.svg" height="20px" alt="resume"/></a>
+        <a href="/assets/pdf/Maksymiuk_Clayton_2020_09_16.pdf" target="_blank"><img src="/assets/img/about/resume.svg" height="20px" alt="resume"/></a>
     </div>
     <div class = "column">  
-        <a href="mailto:contact@cmaks.dev"><img src="/assets/img/about/mail.svg" height="20px" alt="mail"/></a>
+        <a href="mailto:cmaks@umich.edu"><img src="/assets/img/about/mail.svg" height="20px" alt="mail"/></a>
     </div>
 </div>
 
@@ -61,4 +61,4 @@ currently looking for opportunities that will allow me to
 develop my abilities using computer vision and programming 
 autonomous systems.
 
-<a href="mailto:contact@cmaks.dev">Contact me</a> if you'd like to work together on a project!
+<a href="mailto:cmaks@umich.edu">Contact me</a> if you'd like to work together on a project!
