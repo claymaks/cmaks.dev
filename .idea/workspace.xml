@@ -10,14 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_projects/2021-01-01-fisher-agv.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_projects/2020-10-20-weather.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_projects/2020-12-20-eecs367.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_projects/2021-01-03-collision.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/html/eecs367_assignments.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/pro/collisions/all_center.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/pro/collisions/all_no_decel.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/pro/collisions/collisions.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/pro/collisions/multi_point_no_decel.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/pro/collisions/one_point_center.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/pro/weather/dash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/pro/weather/wiring.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2019-06-01-bezier.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/_archived_projects/2019-06-01-bezier.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2020-01-01-http-dp.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/_archived_projects/2020-01-01-http-dp.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2020-02-02-fisher-agv.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2020-04-18-draw-with-objects.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2020-04-18-draw-with-objects.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2015-11-01-halflife.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2015-11-01-halflife.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2019-05-13-Data-Analysis.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2019-05-13-Data-Analysis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2019-07-02-huffman.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2019-07-02-huffman.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2019-12-01-word-tree.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2019-12-01-word-tree.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2020-05-01-dario.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2020-05-01-dario.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2021-01-01-fisher-agv.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2021-01-01-fisher-agv.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,29 +57,30 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/html" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/html" />
+      <recent name="$PROJECT_DIR$/_projects" />
+      <recent name="$PROJECT_DIR$/assets/img/pro" />
       <recent name="$PROJECT_DIR$/assets/img/about" />
       <recent name="$PROJECT_DIR$/assets/img/pro/dario" />
-      <recent name="$PROJECT_DIR$/_projects" />
-      <recent name="$PROJECT_DIR$/_includes" />
-      <recent name="$PROJECT_DIR$/_layouts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$/assets/img/pro/weather" />
       <recent name="$PROJECT_DIR$/_projects/_archived_projects" />
       <recent name="$PROJECT_DIR$/assets/img/pro/dario" />
       <recent name="$PROJECT_DIR$/assets/img/pro" />
-      <recent name="$PROJECT_DIR$/assets/img/scout" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -91,6 +102,7 @@
       <workItem from="1595991263910" duration="6000" />
       <workItem from="1595994130898" duration="1955000" />
       <workItem from="1615445576041" duration="640000" />
+      <workItem from="1615446425113" duration="3145000" />
     </task>
     <servers />
   </component>
@@ -107,5 +119,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

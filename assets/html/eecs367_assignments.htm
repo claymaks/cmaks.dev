@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AutoRob - Michigan EECS 367 ROB 511 - Autonomous Robotics</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <meta name="description" content="AutoRob at Michigan (EECS 367, ROB 511) is an introduction to autonomous robotics for building robot operating systems and mobile manipulation apps">
+    <meta name="author" content="ocj">
+    <meta property="og:image" content="https://autorob.org/images/um_fetch.jpg" />
+    <meta property="og:title" content="AutoRob - Michigan EECS 367 ROB 511 - Autonomous Robotics" />
+    <meta property="og:description" content="AutoRob at Michigan (EECS 367, ROB 511) is an introduction to autonomous robotics for building robot operating systems and mobile manipulation apps" />
+    <meta property="og:url" content="http://autorob.org" />
+    <meta property="og:type" content="article" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Combo with CSSNormalize, CSSGrids-Responsive, CSSForm, CSSTable, CSSList (v3.9.1) -->
+    <link rel="stylesheet" href="resources/yahoo_cssbutton-min.css">
+    <link rel="stylesheet" href="resources/yahoo_gallerycss-cssform-min.css">
+    <link rel="stylesheet" href="resources/yahoo_cssgrids-responsive-min.css">
+    <link rel="stylesheet" href="resources/yahoo_gallerycss-csslist-min.css">
+    <link rel="stylesheet" href="resources/yahoo_cssnormalize-min.css">
+    <link rel="stylesheet" href="resources/yahoo_gallerycss-csstable-min.css">
+
+    <!-- Some custom styles to make things pretty. -->
+    <link rel="stylesheet" type="text/css" href="resources/ui.css">
+
+    <!-- RainbowJS Syntax Highlighting - Github Theme. 
+         For more themes, go to https://github.com/ccampbell/rainbow/tree/master/themes -->
+    <link rel="stylesheet" type="text/css" href="resources/rainbow_github.css">
+
+
+    <!-- Modify header colors here to customize the look and feel of the site-->
+    <style>
+        
+        .header {
+            background: rgb(0, 39, 76);
+         }
+            .header h1 {
+                color: white;
+            }
+             .header h2 {
+                 font-weight:300;
+                 margin:0;
+                 color: rgb(116, 130, 230);
+             }
+    </style>
+
+</head>
+
+<body class='yui3-skin-sam'>
+
+
+    <div class="content">
+<p>
+<center>
+<img width=100% src="images/um_fetch.jpg">
+</center>
+
+
+<hr>
+
+<br>
+<div style = "background-color: #000000; color: #888888; padding-left:10px; padding-right:10px; padding-bottom:30px; padding-top:10px;">
+
+
+</div>
+<br>
+
+<hr>
+
+
+<!--
+<h1> The current version of the AutoRob course website is preliminary, and specific to the Fall 2019 offering of the course.  An updated version of this site will be available for the next offering of the AutoRob course.</h1>
+<hr>
+<h1> The current version of the AutoRob course website is preliminary, and is specific to the Fall 2019 offering of the course.  An updated version of this site will be available for the next offering of the AutoRob course.  The descriptions below are unofficial and tentative for these future course offerings.</h1>
+-->
+
+<hr>
+
+<!--
+<h1> The remainder of the AutoRob course website below is unofficial and preliminary, until the start of courses on August 31, 2020. </h1>
+-->
+
+
+        <h2>Introduction</h2>
+
+<p>
+AutoRob at the University of Michigan (EECS 367, ROB 511) is an introduction to autonomous robotics for building robot operating systems and applications that perform mobile manipulation tasks.  AutoRob covers foundational topics in the modeling and control of autonomous robots and their instantiation as algorithms and computational systems.  AutoRob has two sections: an undergraduate section offered as Introduction to Autonomous Robotics (EECS 367) and a graduate section offered as Robot Operating Systems (ROB 511) with expanded advanced material.  
+</p>
+
+<p>
+The AutoRob course can be thought of as the foundation to build "brains for robots." That is, given a robot as a machine with sensing, actuation, and computation, how do we build computational models, algorithms, programming environments, and applications that allow the robot to function autonomously? Such computation involves functions for robots to perceive the world, make decisions towards achieving a given objective, and transforming action into motor commands.  These functions are essential for modern robotics, especially for mobile manipulators such as the pictured <a href="http://fetchrobotics.com/research/">Fetch</a> robot.
+</p>
+
+<p>
+AutoRob focuses on the computational issues of modeling and control for autonomous robots with an emphasis on manipulation and mobility.  Successful completion of AutoRob will result in the student having implemented code modules for "mobile pick-and-place".  That is, given a robot and perception (or "full observation") of the robot's environment, the resulting code modules can enable the robot to pick up an object at an arbitrary location and place the object in a new location.
+</p>
+
+<p>
+AutoRob projects ground course concepts through implementation in <a href="https://en.wikipedia.org/wiki/JavaScript"</a>JavaScript</a>/<a href="https://en.wikipedia.org/wiki/HTML">HTML5</a> supported by the <a href="https://github.com/autorob/kineval-stencil">KinEval code stencil</a> (snapshot below from Mozilla Firefox).  These projects will cover graph search path planning (<a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* algorithm</a>), basic physical simulation (<a href="https://en.wikipedia.org/wiki/Classical_mechanics">Lagrangian dynamics</a>, <a href ="https://en.wikipedia.org/wiki/Numerical_integration">numerical integrators</a>), proportional-integral-derivative (<a href="https://en.wikipedia.org/wiki/PID_controller">PID</a>) control, forward kinematics (3D geometric <a href="https://en.wikipedia.org/wiki/Transformation_matrix">matrix transforms</a>, matrix stack composition of transforms, axis-angle rotation by <a href="https://en.wikipedia.org/wiki/Quaternion">quaternions</a>), inverse kinematics (<a href="https://en.wikipedia.org/wiki/Gradient_descent">gradient descent</a> optimization, geometric <a href="https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant">Jacobian</a>), and motion planning (simple <a href="https://en.wikipedia.org/wiki/Collision_detection">collision detection</a>, sampling-based <a href="https://en.wikipedia.org/wiki/Motion_planning">motion planning</a>).  Additional topics that could be covered include potential field navigation, Cyclic Coordinate Descent, Newton-Euler dynamics, task and mission planning, Bayesian filtering, and Monte Carlo localization.  
+</p>
+
+<img width=100% src="images/kineval_fetch.png">
+
+<h3>Concepts to build your own robot operating system</h3>
+
+<p>
+AutoRob aims to provide a general conceptual framework that enables students to build their own robot operating systems.  Like <a href="https://en.wikipedia.org/wiki/Operating_system">computing</a> <a href="https://www.merriam-webster.com/dictionary/operating%20system">operating systems</a>, the fundamental goal of a robot operating system is to bridge the gap between robot hardware and application programs to control the robot purposefully.  <a href="https://perldoc.perl.org/perlglossary.html#operating-system">In other words<a/>, robot operating systems hide the gory details of managing robot devices, software processes, and (especially) low-level <a href="https://www.merriam-webster.com/dictionary/sensorimotor">sensorimotor</a> routines.  This abstraction provides a platform for robot applications to <a href="https://en.wikipedia.org/wiki/Runtime_system">run</a> seamlessly across a wide variety of robots with different physical and electronic configurations.
+</p>
+
+<p>
+The area of robot operating systems has emerged from pioneering work in <a href="https://en.wikipedia.org/wiki/Robotics_middleware">robot middleware</a> systems over the last 20 years.  <a href="https://lcm-proj.github.io/">Lightweight Communications and Marshalling (LCM)</a>, <a href="https://www.yarp.it/">Yet Another Robot Platform (YARP)</a>, <a href="http://www.themoos.org/">the MOOS</a> (<a href="http://www.moos-ivp.org/">Mission Oriented Operating Suite</a>), 
+<a href="https://openjaus.com/understanding-jaus/">JAUS-based systems</a>, <a href="https://en.wikipedia.org/wiki/Player_Project">Player/Stage</a>, and the well-branded <a href="http://ros.org">Robot Operating System (ROS)<a> are examples of leading robot middleware systems.  Topics covered in AutoRob will help you understand the insides of all of these robot middleware systems, make them better, and develop the robot operating systems of the future.  Brief vocational coverage of how to use and develop robot controllers with ROS and/or LCM will be included in this offering of AutoRob.
+</p>
+
+<h3>KinEval code stencil and programming framework</h3>
+
+<p>
+AutoRob projects will use the KinEval code stencil that roughly follows conventions and structures from the <a href="http://ros.org">Robot Operating System (ROS)<a> and <a href="http://robotwebtools.org/">Robot Web Tools (RWT)</a> software frameworks, as widely used across robotics.  These conventions include the <a href="http://wiki.ros.org/urdf/Tutorials/Create%20your%20own%20urdf%20file">URDF</a> kinematic modeling format, <a href="http://wiki.ros.org/Topics">ROS topic</a> structure, and the <a href="https://github.com/RobotWebTools/rosbridge_suite/blob/develop/ROSBRIDGE_PROTOCOL.md"><i>rosbridge</i> protocol</a> for <a href="https://json.org/">JSON</a>-based messaging.
+
+KinEval uses <a href="http://threejs.org/">threejs</a> for in-browser 3D rendering.  Projects also make use of the <a href="https://github.com/sloisel/numeric/">Numeric Javascript</a> external library for select matrix routines, although other math support libraries are being explored.  Auxiliary code examples and stencils will often use the <a href="http://jsfiddle.net/">jsfiddle</a> development environment. 
+</p>
+
+<table><tr><td style="background:#dddddd">
+<img width=30% align="right" src="images/kineval_rosbridge.jpg">
+<p>
+<b>You will use an actual robot (at least once)!</b>
+</p>
+
+<p>
+While AutoRob projects will be mostly in simulation, KinEval allows for your code to work with any robot that supports the <a href="https://github.com/RobotWebTools/rosbridge_suite/blob/develop/ROSBRIDGE_PROTOCOL.md"><i>rosbridge</i> protocol</a>, which includes any robot running ROS.  Given a URDF description, the code you produce for AutoRob will allow you to view and control the motion of any mobile manipulation robot with rigid links.  Your code will also be able to access the sensors and other software services of the robot for your continued work as a roboticist.
+</p>
+
+<p>
+For Fall 2020, the course staff is exploring ways to enable students to access physical robots at least once during the course in a manner that is in compliance with safe research operations and public health guidelines.
+</p>
+</td></tr></table>
+
+<h2>Course Staff</h2>
+
+<h3>Faculty Instructor</h3>
+
+<p><a href="http://web.eecs.umich.edu/~ocj">Chad Jenkins</a> 
+<br>
+ocj addrsign umich
+<br>
+<i>GitHub:</i> ohseejay
+<br>
+<i>Bitbucket:</i> ohseejay
+<br>
+Office: Beyster 3644
+<br>
+Office Hours: Monday 2:30-5pm, Wednesday 2-3:15pm
+<br>
+<i>Office hours will be virtual-only unless students are notified otherwise.</i>
+</p>
+
+<h3>Graduate Student Instructors</h3>
+
+<p>
+<a href="http://www.zhemingzhou.net/">Zheming Zhou</a>
+<br>
+zhezhou addrsign umich
+<br>
+<i>GitHub:</i> zhezhou1993
+<br>
+<i>Bitbucket:</i> zhezhou
+<br>
+Office Hours: Tuesday 1-2pm
+</p>
+
+<p>
+<a href="https://github.com/emgoeddel">Elizabeth Goeddel</a>
+<br>
+mamantov addrsign umich
+<br>
+<i>GitHub:</i> emgoeddel
+<br>
+<i>Bitbucket:</i> emgoeddel
+<br>
+Office Hours: Tuesday 5:30-6:30pm
+</p>
+
+<p>
+<a href="https://robotics.umich.edu/profile/xiaotong-chen/">Xiaotong Chen</a>
+<br>
+cxt addrsign umich
+<br>
+<i>GitHub:</i> cxt98
+<br>
+<i>Bitbucket:</i> cxt98
+<br>
+Office Hours: Thursday 4-5pm
+</p>
+
+<h2 id="assignment1">Assignment 1: Path Planning</h2>  
+<p>
+<b>Due 11:59pm, Wednesday, September 16, 2020</b>
+</p>
+
+
+<p>
+The objective of the first assignment is to implement a collision-free path planner in JavaScript/HTML5.  Path planning is used to allow robots to autonomously navigate in environments from previously constructed maps.  A path planner essentially finds a set of waypoints (or setpoints) for the robot to traverse and reach its goal location without collision.  As covered in other courses (EECS 467, ROB 550, or EECS 568), such maps can be estimated through methods for <a href="https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping">simultaneous localization and mapping</a>.  Below is an example from <a href="https://www.youtube.com/playlist?list=PLDutmfAv2lfZ9M0XyYfY4N8EwLJhy58G6">EECS 467</a> where a <a href="https://youtu.be/c-e12F_QqiM">robot performs autonomous navigation</a> while simultaneously building an occupancy grid map:
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c-e12F_QqiM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
+
+<p>
+For this assignment, you will implement the planning part of autonomous navigation as an A-star graph search algorithm.  Unlike in the above video, where the map is built as the robot explores, you will be given a complete map of the robot's world to run A-star on. A-star infers the shortest path from a start to a goal location in an arbitrary 2D world with a known map (or collision geometry).  This A-star implementation will consider locations in a uniformly spaced, 4-connected grid. A-star requires an <a href="https://en.wikipedia.org/wiki/Admissible_heuristic">admissible heuristic</a>, which can be the <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a> to the goal in your implementation. You will implement a heap data structure as a priority queue for visiting locations in the search grid.
+</p>
+
+<p>
+If properly implemented, the A-star algorithm should produce the following path (or path of similar length) using the provided code stencil:
+</p>
+
+<center>
+<img width=600 src="images/asgn1_narrow2_complete.png">
+</center>
+
+<!--
+<!-- (uncomment marker begin 1)
+-->
+
+<h3>Features Overview</h3>
+
+<p>
+  This assignment requires the following features to be implemented in the corresponding files in your repository:
+</p>
+
+<ul>
+  <li> <p>Heap implementation in "tutorial_heapsort/heap.js"</p></li>
+  <li> <p>A-star search in "project_pathplan/graph_search.js"</p></li>
+  <li> <p>[Grad section only] Breadth-first search (BFS) in "project_pathplan/graph_search.js"</p></li>
+  <li> <p>[Grad section only] Depth-first search (DFS) in "project_pathplan/graph_search.js"</p></li>
+  <li> <p>[Grad section only] Greedy best-first search in "project_pathplan/graph_search.js"</p></li>
+</ul>
+
+<p>
+  Points distributions for these features can be found in the <a href="#project_rubric">project rubric section</a></td>. More details about each of these features and the implementation process are given below.
+</p>
+
+<h3>Cloning the Stencil Repository</h3>
+
+<p>
+The first step for completing this project (and all projects for AutoRob) is to clone the <a href="https://github.com/autorob/kineval-stencil">KinEval stencil repository</a>.  The appended git quick start below is provided those unfamiliar with git to perform this clone operation, as well as commiting and pushing updates for project submission.  <b>IMPORTANT</b>: the stencil repository should be cloned and <b>not forked</b>.
+</p>
+
+<p>
+Throughout the KinEval code stencil, there are markers with the string "STENCIL" for code that needs to be completed for course projects. For this assignment, you will write code where indicated by the "STENCIL" marker in "tutorial_heapsort/heap.js" and "project_pathplan/graph_search.js".
+</p>
+
+<h3>Heap Sort Tutorial</h3>
+
+<p>
+The recommended starting point for this assignment is to complete the heap sort implementation in the "tutorial_heapsort" subdirectory of the stencil repository.  In this directory, a code stencil in JavaScript/HTML5 is provided in two files: "heapsort.html" and "heap.js".  Comments are provided throughout these files to describe the structure of JavaScript/HTML5 and its programmatic features.
+</p>
+
+<p>
+  If you are new to JavaScript/HTML5, there are other tutorial-by-example files in the "tutorial_js" directory.  Any of these files can be run by simply opening them in a web browser. Note that these are examples <i>only</i>, and there are no assignment requirements in the "tutorial_js" files.
+</p>
+
+<p>
+Opening "heapsort.html" will show the result of running the incomplete heap sort implementation provided by the code stencil:
+
+</p>
+
+<center>
+<img width=600 src="images/heapsort_initial.png">
+</center>
+
+<p>
+To complete the heap sort implementation, complete the heap implementation in "heap.js" at the locations marked "STENCIL".  In addition, the inclusion of "heap.js" in the execution of the heap sort will require modification of "heapsort.html".
+</p>
+
+<p>
+A successful heap sort implementation will show the following result for a randomly generated set of numbers:
+</p>
+
+<center>
+<img width=600 src="images/heapsort_complete.png">
+</center>
+
+<h3>Graph Search Stencil</h3>
+
+<p>
+For the path planning implementation, a JavaScript/HTML5 code stencil has been provided in the the "project_pathplan" subdirectory. The main HTML file, "search_canvas.html", includes JavaScript code from "draw.js", "infrastructure.js", and "graph_search.js". Of these files, students must only edit "graph_search.js", although you may want to examine the other files to understand the available helper functions.  Opening "search_canvas.html" in a browser should display an empty 2D world displayed in an <a href="http://www.w3schools.com/html/html5_canvas.asp">HTML5 canvas</a> element.
+</p>
+
+<center>
+<img width=600 src="images/asgn1_narrow2_initial.png">
+</center>
+
+<p>
+There are five planning scenes that have been provided within this code stencil: "empty", "misc", "narrow1", "narrow2", and "three_sections".  The choice of planning_scene can be specified from the URL given to the browser, described in the usage in the file.  For example, the URL "search_canvas.html?planning_scene=narrow2" will bring up the "narrow2" planning world shown above.  Other execution parameters, such as start and goal location, can also be specified through the document URL. A description of these parameters is provided in "search_canvas.html".
+</p>
+
+<p>
+This code stencil is implemented to perform graph search iterations interactively in the browser.  The core of the search implementation is performed by the function iterateGraphSearch().  This function performs a graph search iteration for a single location in the A-star execution.  The browser implementation cannot use a while loop over search iterations, as in the common A-star implementation.  Such a while loop would keep control within the search function, and cause the browser to become non-responsive.    Instead, the iterateGraphSearch() gives control back to the main animate() function, which is responsible for updating the display and user interaction. 
+</p>
+
+<p>
+  Within the code stencil, you will complete the functions initSearchGraph() and iterateGraphSearch() as well as add functions for heap operations.  Locations in "graph_search.js" where code should be added are labeled with the "STENCIL" string.
+</p>
+
+<p>
+  The initSearchGraph() function creates a 2D array over graph cells to be searched.  Each element of this array contains various properties computed by the search algorithm for a particular graph cell.  Remember, a graph cell represents a square region of space in the 2D planning scene. The size of each cell is specified by the "eps" parameter, as the lengths of the square sides.  initSearchGraph() must determine the start node for accessing the planning graph from the start pose of the robot, specified as a 2D vector in parameter "q_init".  The visit queue is initialized as this start node.
+</p>
+
+<p>
+  The iterateGraphSearch() function should perform a search iteration towards the goal pose of the robot, specified as a 2D vector in parameter "q_goal".  The search must find a goal node that allows for departure from the planning graph without collision.  iterateGraphSearch() makes use of three provided helper functions.  testCollision([x, y]) returns a boolean of whether a given 2D location, as a two-element vector [x, y], is in collision with the planning scene.  draw_2D_configuration([x, y], type) draws a square at a given location in the planning world to indicate that location has been visited by the search (type = "visited") or is currently in the planning queue (type = "queued").  Once the search is complete, drawHighlightedPathGraph(l) will render the path produced by the search algorithm between location l and the start location. The global variable search_iterate should be set to false when the search is complete to end animation loop.
+</p>
+
+<h3> Graduate Section Requirement</h3>
+
+<p>
+In addition to the A-star algorithm, students in the graduate section of AutoRob must additionally implement path planning by Depth-first search, Breadth-first search, and Greedy best-first search.  An additional report is required in "report.html" (you will need to create this file) in the "project_pathplan" directory. This report must: 1) show results from executing every search algorithm with every planning world for various start and goal configurations and 2) synthesize these results into coherent findings about these experiments.
+</p>
+
+<p>
+For effective communication, it is recommended to think of "report.html" like a short research paper: motivate the problem, set the value proposition for solving the problem, describe how your methods can address the problem, and show results that demonstrate how well these methods realize the value proposition. Visuals are highly recommended to complement this description. The best research papers can be read in three ways: once in text, once in figures, and once in equations. It is also incredibly important to remember that writing in research is about generalizable understanding of the problem more than a specific technical accomplishment.
+</p>
+
+<h4> Advanced Extensions</h4>
+
+<p>
+Advanced extensions can be submitted anytime before the final grading is complete.  Concepts for several of these extensions will not be covered until later in the semester.  Any new path planning algorithm must be implemented within its own ".js" file under the "project_pathplan" directory, and invoked through a parameter given through the URL.  For example, the Bug0 algorithm must be invoked by adding the argument "?search_alg="Bug0" to the URL. Thus, a valid invocation of Bug0 for the Narrow2 world could use the URL:
+</p>
+<p>
+ "file:///project_pathplan/source_search_canvas.html?planning_scene=narrow2?search_alg="Bug0"
+</p>
+<p>
+The same format must be used to invoke any other algorithm (such as Bug1, Bug2, TangentBug, Wavefront, etc.). Note that you will need to update the animate loop in draw.js to include new planning algorithms and update the main HTML file to include your new scripts, along with implementing the algorithms in their own files.
+</p>
+
+<p>
+Of the 4 possible advanced extension points, two additional points for this assignment can be earned by implementing the "Bug0", "Bug1", "Bug2", and "TangentBug" navigation algorithms.  The implementation of these bug algorithms must be contained within the file "bug.js" under the "project_pathplan" directory.
+</p>
+
+<p>
+Of the 4 possible advanced extension points, two additional points for this assignment can be earned by implementing navigation by "Potential" fields and navigation using the "Wavefront" algorithm.  The implementation of these potential-based navigation algorithms must be contained within the file "field_wave.js" under the "project_pathplan" directory.
+</p>
+
+
+<p>
+Of the 4 possible advanced extension points, one additional point for this assignment can be earned by implementing a navigation algorithm using a probabilistic roadmap ("PRM").  This roadmap algorithm implementation must be contained within the file "prm.js" under the "project_pathplan" directory.
+</p>
+
+<p>
+Of the 4 possible advanced extension points, one additional point for this assignment can be earned by implementing costmap functionality using morphological operators.  Based on the computed costmap, the navigation routine would provide path cost in addition path length for a successful search.  The implementation of this costmap must be contained within the file "costmap.js" under the "project_pathplan" directory.
+</p>
+
+<p>
+Of the 4 possible advanced extension points, one additional point for this assignment can be earned by implementing a priority queue through an <a href="https://en.wikipedia.org/wiki/AVL_tree">AVL tree</a> or a <a href="https://en.wikipedia.org/wiki/Red%E2%80%93black_tree">red-black tree</a>.  The implementation of this priority queue must be contained within the file "balanced_tree.js" under the "project_pathplan" directory.
+</p>
+
+<p>
+Of the 4 possible advanced extension points, one additional point for this assignment can be earned by adapting the search canvas to plan betwen any locations in the map "bbb2ndfloormap.png" (provided in the stencil repository) when the "planning_scene" parameter is invoked as "BeysterFloor2".
+</p>
+
+
+
+
+<h3>Project Submission</h3>
+
+<p>
+For turning in your assignment, ensure your completed project code has been committed and pushed to the <i>master</i> branch of your repository.  
+</p>
+
+<p>
+To ensure proper submission of your assignments, please do the following:
+</p>
+
+<p>
+<ul>
+<li><p>complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeD4jabAk-QcMvTR2zSvslcBbPQzhyOOK90VEUQGffOhOdlQ/viewform?usp=sf_link">AutoRob Fall 2020 Student Workflow Survey</a>, making sure you provide the URL pointer to your git repository,</p> </li>
+<!--<li><p>confirm with the course instructor (ocj addrsign umich) with your name, email address, and pointer to your repository,</p> </li> -->
+<li><p>ensure the instructor and all GSIs have push/admin access to your repository, which can be confirmed/addressed through email or office hours</p></li>
+</ul>
+</p>
+
+<h6>
+If you are paying attention, you should also add a directory to your repository called "me".  This "me" directory should include a simple webpage in the file "me.html".  The "me.html" file should have a title with your name, an h1 tag with your name, an img tag includes a picture of you from the file "me.png", body with a brief introduction about you, and a script tag that prints the result of <code>Array(16).join("wat"-1)+" Batman!"</code> to the console. 
+</h6>
+<!--
+(uncomment marker end 1) -->
+
+
+<!--
+<h2 id="assignment1">Assignment 1: Getting Started (Warm up)</h2>  
+<p>
+<b>Due 1pm, Wednesday, January 20, 2016</b>
+</p>
+<p>
+In this assignment, you should clone the <a href="https://github.com/autorob/kineval-stencil">kineval_stencil</a> repository into your working repository for the course.  kineval_stencil contains a code template for this assignment as well as all projects in the course.  If you open "home.html" in this repository, you should see the jittering disconnected pieces of a robot (described in "robots/mr2.js"), similar to the snapshot below.  This initial mode is the "starting point" state of the stencil to help build familiarity with JavaScript/HTML5 and KinEval.
+</p>
+<img width=100% src="images/kineval_welcome.png">
+
+<p>
+Your task is to make these objects in starting point mode responsive to keyboard commands.  Specifically, these objects will move upward, stop/start jittering, move closer together, and further apart (although more is encouraged).  To do this, you will modify "kineval/kineval_startingpoint.js" at the sections marked with "STENCIL".  These sections also include code examples meant to be a quick (and very rough) introduction to JavaScript, assuming programming competency in another language. 
+</p>
+
+<h3>Brief Code Overview</h3>
+<p>
+Within the KinEval stencil, the functions my_animate() and my_init() in "home.html" are the principal access points into animation system.  my_animate() is particularly important as it will direct the invocation of functions we develop throughout the AutoRob course.  my_animate() and my_init() are called by the primary process that maintains the animation loop: kineval.animate() and kineval.init() within "kineval/kineval.js".  <b>IMPORTANT</b>: "kineval/kineval.js", kineval.animate(), and kineval.init() should not be modified.  For starting point mode, my_animate() will call startingPlaceholderAnimate() and startingPlaceholderInit().  startingPlaceholderInit() contains JavaScript tutorial-by-example code that initializes variables for this project. startingPlaceholderAnimate() contains keyboard handlers and code to update the positioning of each body of the robot.  By modifying the proper variables at the locations labed "STENCIL", this code will update the transformation matrix for each geometry of the robot (stored in the ".xform" attribute) as a translation in the robot's world.  The ".xform" transform for each robot geometry is then used by kineval.robotDraw() to have the browser render the robot parts in the appropriate locations.
+</p>
+
+</p>
+
+<h3>Project Submission</h3>
+<p>
+To ensure proper submission of your assignments, please do the following:
+</p>
+ 
+<p>
+<ul>
+<li><p>email the course instructor (ocj addrsign umich) with your name, email address, and pointer to your repository,</p> </li>
+<li><p>ensure the course instructor knows what repository you are using, and your branch is created and not modified past project deadlines</p></li>
+<li><p>ensure the instructor (id:ohseejay) has push/admin access to your repository, which can be confirmed/addressed through email or office hours (or by seeing that the instructor has committed the file "grading.txt")</p></li>
+</ul>
+</p>
+
+<p>
+For turning in your assignment, create a branch in your repository labeled "Assignment-1".  <b>NOTE: spelling matters!</b>  The "Assignment-1" branch is essentially a tag and should not be merged back into the master.  You should continue work from the master branch.
+</p>
+-->
+
+<!--
+<hr>
+<h1> Material beyond this point has not been assigned.  The descriptions below are unofficial and tentative.</h1>
+<hr>
+-->
+
+
+
+<h2 id="assignment2">Assignment 2: Pendularm </h2>  
+<p>
+<b>Due 11:59pm, Wednesday, September 30, 2020</b>
+</p>
+
+<p>
+Physical simulation is widely used across robotics to test robot controllers.  Testing in simulation has many benefits, such as avoiding the risk of damaging a (likely expensive) robot and faster development of controllers.  Simulation also allows for consideration of environments not readily available for testing, such as interplanetary exploration (as in the example below for the NASA Space Robotics Challenge).  We will now model and control our first robot, the Pendularm, to achieve an arbitrary desired setpoint state.
+</p>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vOssEL1xqNs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
+
+<p>
+As an introduction to building your own robot simulator, your task is to implement a physical dynamics and servo controller for a simple 1 degree-of-freedom robot system.  This system is 1 DOF robot arm as a frictionless <a href="http://en.wikipedia.org/wiki/Pendulum">simple pendulum</a> with a rigid massless rod and idealized motor. A visualization of the Pendularm system is shown below.  Students in the graduate section will extend this system into a 2-link 2-DOF robot arm, as an actuated <a href="https://en.wikipedia.org/wiki/Double_pendulum">double pendulum</a>.
+</p>
+
+<p>
+<center>
+<a href="https://github.com/autorob/kineval-stencil/blob/master/project_pendularm/pendularm1.html"><img width=80% src="images/pendularm.png"></a>
+</center>
+</p>
+
+<h3>Features Overview</h3>
+
+<p>
+  This assignment requires the following features to be implemented in the corresponding files in your repository:
+</p>
+
+<ul>
+  <li> <p>Euler integrator in "project_pendularm/update_pendulum_state.js"</p></li>
+  <li> <p>Velocity Verlet integrator in "project_pendularm/update_pendulum_state.js"</p></li>
+  <li> <p>PID controller in "project_pendularm/update_pendulum_state.js"</p></li>
+  <li> <p>[Grad section only] Verlet integrator in "project_pendularm/update_pendulum_state.js"</p></li>
+  <li> <p>[Grad section only] Runge-Kutta 4 integrator in "project_pendularm/update_pendulum_state.js"</p></li>
+  <li> <p>[Grad section only] Double pendulum implementation in "project_pendularm/update_pendulum_state2.js"</p></li>
+</ul>
+
+<p>
+  Points distributions for these features can be found in the <a href="#project_rubric">project rubric section</a></td>. More details about each of these features and the implementation process are given below.
+</p>
+
+<!-- 
+<!-- (uncomment marker begin 2)
+-->
+
+<h3>Implementation Instructions </h3>
+
+<p>
+The code stencil for the Pendularm assignment is available within the "project_pendularm" subdirectory of KinEval.
+</p>
+
+<p>
+For physical simulation, you will implement several numerical integrators for a pendulum with parameters specified in the code stencil.  The numerical integrator will advance the state of the pendulum (angle and velocity) in time given the current acceleration, which your pendulum_acceleration function should compute using the pendulum equation of motion. Your code should update the angle and velocity in the pendulum object (pendulum.angle and pendulum.angle_dot) for the visualization to access. If implemented successfully, this ideal pendulum should oscillate about the vertical (where the angle is zero) and with an amplitude that preserves the initial height of the pendulum bob.
+</p>
+
+
+<p>
+Students enrolled in the undergraduate section will implement numerical integrators for:
+</p>
+
+<ul>
+<li><p><a href="http://en.wikipedia.org/wiki/Euler%27s_method">Euler's Method</a> </p></li>
+<li><p><a href="http://en.wikipedia.org/wiki/Verlet_integration#Velocity_Verlet">Velocity Verlet</a></p></li> 
+</ul>
+
+
+
+<p>
+For motion control, students in both undergraduate and sections will implement a <a href="http://en.wikipedia.org/wiki/PID_controller">proportional-integral-derivative controller</a> to control the system's motor to a desired angle.  This PID controller should output control forces integrated into the system's dynamics.  You will need to tune the gains of the PID controller for stable and timely motion to the desired angle for a pendulum with parameters: length=2.0, mass=2.0, gravity=9.81. These default values are also provided directly in the init() function.
+</p>
+
+<p>
+For user input, you should be able to: 
+</p>
+
+<ul>
+<li><p>select the choice of integrator using the [0-4] keys (with the "none" integrator as a default),</p></li> 
+<li><p>toggle the invocation of the servo controller with the 'c' or 'x' key (which is off by default),</p></li> 
+<li><p>decrement and increment the desired angle of the 1 DOF servoed robot arm using the 'q' and 'e' keys, and</p> </li>
+<li><p>(for the double pendulum) decrement and increment the desired angle of the second joint of the arm using the 'w' and 'r' keys, and</p> </li>
+<li><p>momentarily disable the servo controller with 's' key (and allowing the arm to swing uncontrolled).</p></li>
+</ul>
+
+
+<h3> Graduate Section Requirement</h3>
+
+<p>
+Students enrolled in the graduate section will implement numerical integrators for:
+</p>
+
+<ul>
+<li><p><a href="http://en.wikipedia.org/wiki/Euler%27s_method">Euler's Method</a> </p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Verlet_integration#Verlet_integration_.28without_velocities.29">Verlet integration</a></p></li>
+<li><p><a href="http://en.wikipedia.org/wiki/Verlet_integration#Velocity_Verlet">Velocity Verlet</a></p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods#The_Runge.E2.80.93Kutta_method">Runge-Kutta 4</a></p></li>
+</ul>
+
+<p>
+to simulate and control a single pendulum (in "update_pendulum_state.js"). Then, students in the graduate section will implement one of the above integrators for a double pendulum (in "update_pendulum_state2.js"). Any of the integrators may work as your choice for the double pendulum implementation, although the Runge-Kutta integrator is recommended. The double pendulum is allowed to have a smaller timestep than the single pendulum, within reasonable limits. A working visualization for the double pendularm will look similar to the following:
+</p>
+
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-8YH1JhklBw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<h4> Advanced Extensions </h4>
+
+<p>
+Of the 4 possible advanced extension points, one additional point for this assignment can be earned by generating a random desired setpoint state and using PID control to your Pendularm to this setpoint.  This code must randomly generate a new desired setpoint and resume PID control once the current setpoint is achieved.  <b> A setpoint is considered achieved if the current state matches the desired state upto 0.01 radians for 2 seconds.</b> The number of setpoints that can be achieved in 60 seconds must be maintained and reported in the user interface.  The invocation of this setpoint trial must be enabled a user pressing the "t" key in the user interface.
+</p>
+
+<p>
+Of the 4 possible advanced extension points, two additional points for this assignment can be earned by implementing a simulation of a planar <a href="https://en.wikipedia.org/wiki/Inverted_pendulum">cart pole system</a>.  This cartpole system should have joint limits on its prismatic joint and no motor forces applied to the rotational joint.  This cart pole implementation should be contained within the file "cartpole.html" under the "project_pendularm" directory.
+</p>
+
+
+<p>
+Of the 4 possible advanced extension points, two additional points for this assignment can be earned by implementing a single pendulum simulator in maximal coordinates with a spring constraint enforced by <a href="https://en.wikipedia.org/wiki/Verlet_integration#Constraints">Gauss-Seidel optimization</a>.  This maximal coordinate pendulum implementation should be contained within the file "pendularm1_maximal.html" under the "project_pendularm" directory.  An additional point can be earned by extending this implementation to a cloth simulator in the file "cloth_pointmass.html".
+</p>
+
+
+<h3> Project Submission</h3>
+<p>
+For turning in your assignment, push your updated code to the <b>master</b> branch in your repository.  
+</p>
+
+<!-- 
+<h3> Additional Notes</h3>
+<p>
+Students in the graduate section are strongly encouraged to extend their pendularm to a double pendulum.
+</p>
+(uncomment end 2) -->
+
+<!--
+<hr>
+<h1> Material beyond this point has not been assigned.  The descriptions below are unofficial and tentative.</h1>
+<hr>
+-->
+
+<h2 id="assignment3">Assignment 3: Forward Kinematics</h2>  
+<b>Due 11:59pm, <s>Wednesday, October 14</s> Friday, October 30, 2020</b>
+<p>
+Forward kinematics (FK) forms the core of our ability to purposefully control the motion of a robot arm.  FK will provide us a general formulation for controlling any robot arm to reach a desired configuration and execute a desired trajectory.  Specifically, FK allows us to predict the spatial layout of the robot in our 3D world given a configuration of its joints.  For the purposes of grasping and dexterous tasks, FK gives us the critical ability to predict the location of the robot's gripper (also known as its "endeffector").  As shown in our <a href="http://www.iros2017.org/">IROS 2017</a> video below, such manipulation assumes a robot has already perceived its environment as a scene estimate of objects and their positions and orientations.  Given this scene estimate, a robot controller uses FK to evaluate and execute viable endeffector trajectories for grasping and manipulating an object.
+</p>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ry0mqY5I-04" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
+
+<p>
+In this assignment, you will render the forward kinematics of an arbitrary robot, given an arbitrary kinematic specification.  A collection of specifications for various robots is provided in the "robots" subdirectory of the KinEval code stencil.  These robots include the Rethink Robotics' Baxter and Sawyer robots, the Fetch mobile manipulator, and a variety of example test robots, as shown in the "Desired Results" section below.  To render the robot properly, you will compute matrix coordinate frame transforms for each link and joint of the robot based on the parameters of its hierarchy of joint configurations.  The computation of the matrix transform for each joint and link will allow KinEval's rendering support routines to properly display the full robot.  We will assume the joints will remain in their zero position, saving joint motion for the next assignment.  
+</p>
+
+<!-- 
+<!-- (uncomment marker begin 3)
+-->
+<h3>Features Overview</h3>
+
+<p>
+  This assignment requires the following features to be implemented in the corresponding files in your repository:
+</p>
+
+<ul>
+  <li> <p>[Optional, recommended] Fill in stencils for Just Starting Mode in "kineval/kineval_startingpoint.js"</p></li>
+  <li> <p>Core matrix routines in "kineval/kineval_matrix.js"</p></li>
+  <li> <p>FK transforms in "kineval/kineval_forward_kinematics.js"</p></li>
+  <li> <p>Joint selection/rendering, based on the kinematic hierarchy in "kineval/kineval_robot_init_joints.js"</p></li>
+  <li> <p>[Grad section only] Base offset transform in "kineval/kineval_forward_kinematics.js" </p></li>
+  <li> <p>[Grad section only] New robot definition in your own file in the "robots" directory</p></li>
+</ul>
+
+<p>
+  Points distributions for these features can be found in the <a href="#project_rubric">project rubric section</a></td>. More details about each of these features and the implementation process are given below.
+</p>
+
+<h3>Just Starting Mode</h3>
+
+<p>
+While previous assignments were implemented within self-contained subsections of the kineval_stencil repository, with this project, you will start working with the KinEval part of the stencil repository that also supports all future projects in the course.  This KinEval stencil allows for developing the core of a modeling and control computation stack (forward kinematics, inverse kinematics, and motion planning) in a modular fashion.
+</p>
+
+<p>
+If you open "home.html" in this repository, you should see the disconnected pieces of a robot bouncing up and down in the default environment.  This initial mode is the "starting point" state of the stencil to help build familiarity with JavaScript/HTML5 and KinEval.
+</p>
+<img width=100% src="images/kineval_welcome.png">
+
+<p>
+Your (optional) first task is to make the bouncing robot in starting point mode responsive to keyboard commands.  Specifically, the robot pieces will move upward, stop/start jittering, move closer together, and further apart (although more is encouraged).  To do this, you will modify "kineval/kineval_startingpoint.js" at the sections marked with "STENCIL".  These sections also include code examples meant to be a quick (and very rough) introduction to JavaScript and homogeneous transforms for translation, assuming programming competency in another language.
+</p>
+
+<h3>Brief KinEval Stencil Overview</h3>
+<p>
+Within the KinEval stencil, the functions my_animate() and my_init() in "home.html" are the principal access points into the animation system.  my_animate() is particularly important as it will direct the invocation of functions we develop throughout the AutoRob course.  my_animate() and my_init() are called by the primary process that maintains the animation loop: kineval.animate() and kineval.init() within "kineval/kineval.js".
+<br>
+<br>
+<b>IMPORTANT</b>: "kineval/kineval.js", kineval.animate(), kineval.init(), and any of the given robot descriptions should not be modified.
+</p>
+
+<p>
+For Just Starting Mode, my_animate() will call startingPlaceholderAnimate() and startingPlaceholderInit(), defined in "kineval/kineval_startingpoint.js".  startingPlaceholderInit() contains JavaScript tutorial-by-example code that initializes variables for this project. startingPlaceholderAnimate() contains keyboard handlers and code to update the positioning of each body of the robot.  By modifying the proper variables at the locations labed "STENCIL", this code will update the transformation matrix for each geometry of the robot (stored in the ".xform" attribute) as a translation in the robot's world.  The ".xform" transform for each robot geometry is then used by kineval.robotDraw() to have the browser render the robot parts in the appropriate locations.
+</p>
+
+
+<h3>Forward Kinematics Files</h3>
+<p>
+Assuming proper completion of Just Starting Mode, you are now ready for implementation of robot forward kinematics.  The following files are included (within script tags) in "home.html".  You will modify these files for implementing FK:
+
+<ul>
+<li><p>"kineval/kineval_robot_init_joints.js" for initializing your robot object based on a given description object; modification of this file is required to add parent and child references to each link</p></li>
+<li><p>"kineval/kineval_forward_kinematics.js" for implementing (a recursive) traversal over joints and links to compute transforms; traversal of forward kinematics is invoked from kineval.robotForwardKinematics() within my_animate() in home.html</p></li>
+ <li><p>"kineval/kineval_matrix.js" for the implementation of your vector and matrix routines, such as for matrix multiplication, matrix generation, etc.</p></li>
+</ul>
+</p>
+
+<h3>Core Matrix Routines</h3>
+
+<p>
+A good place to start with your FK implemetation is writing and testing the core matrix routines. "kineval/kineval_matrix.js" contains function stencils for all required linear algebra routines. You will need to uncomment and fill in all the functions provided in this file <b>except matrix_pesudoinverse and matrix_invert_affine</b>. You do <b>not</b> need to implement the pseudoinverse calculation for this assignment; you should leave the matrix_pseudoinverse function commented out. You can implement the affine inverse function, but it will not be used in or tested for this assignment.
+</p>
+<p>
+It is good practice to test these functions before continuing with your FK implementation. Consider writing a collection of tests using example matrix and vector calculations from the lecture slides or other sources.
+</p>
+
+<h3> Robot Examples </h3>
+<p>
+Each file in the "robots" subdirectory contains code to create a robot data object.  This data object is initialized with the kinematic description of a robot (as well as some meta information and rendering geometries).  The kinematic description defines a hierarchical configuration of the robot's links and joints.  This description is a subset of the <a href="http://wiki.ros.org/urdf">Unified Robot Description Format (URDF)</a> converted into JSON format.  The basic features of URDF are described in <a href="http://wiki.ros.org/urdf/Tutorials/Create%20your%20own%20urdf%20file">this tutorial</a>.
+</p>
+
+<p>
+<b>IMPORTANT (seriously):</b> The given robot description files should <b>NOT</b> be modified.  Code that requires modified robot description files will fail tests used for grading.  You are welcomed and encouraged to create new robot description files for additional testing.
+</p>
+
+<p>
+The selection of different robot descriptions can occur directly in the URL for  "home.html".  As a default, the "home.html" in the KinEval stencil assumes the "mr2" robot description in "robots/robot_mr2.js".  Another robot description file can be selected directly in the URL by adding a robot parameter.  This parameter is segmented by a question mark and sets the robot file pointer to a given file local location, relative to "home.html".  For example, a URL with "home.html?robot=robots/robot_urdf_example.js" will use the URDF example description. Note that to see the selected robot model in your visualization, you will need to turn off Just Starting Mode and have your FK methods implemented; see the Invoking Forward Kinematics section for more details.
+</p>
+
+<h3> Initialization of Kinematic Hierarchy </h3>
+<p>
+In addition to the various existing initialization functions, you should extend the robot object to complete the kinematic hierarchy to specify the parent and children joints for each link.  This modification should be made in the kineval.initRobotJoints() function in "kineval/kineval_robot_init_joints.js".  The children array of a link should be defined for all links except the leaves of the kinematic tree, in which case the ".children" property should be left undefined.  For the KinEval user controls to work properly, the children array should be named the ".children" property of the link.
+</p>
+
+<p>
+<b>Note</b>: KinEval refers to links and joints as strings, not pointers, within the robot object.  robot.joints (as well as robot.links) is an array of data objects that are indexed by strings.  Each of these objects stores relevant fields of information about the joint, such as its transform (".xform"), parent (".parent") and child (".child") in the kinematic hierarchy, local transform information (".origin"), etc.  As such, robot.joints['JointX'] refers to an object for a joint.  In contrast, robot.joints['JointX'].child refers to a string ('LinkX'), that can then be used to reference a link object (as robot.links['LinkX']).   Similarly, robot.links['LinkX'].parent refers to a joint as a string 'JointX' that can then then be used to reference a joint object in the robot.joints array.
+</p>
+
+<h3> Invoking Forward Kinematics</h3>
+
+<p>
+The function kineval.robotForwardKinematics() in "kineval/kineval_forward_kinematics.js" will be the main point of invocation for your FK implementation.  This function will need to call kineval.buildFKTransforms(), which is a function you will add to this file. kineval.buildFKTransforms() will update matrix transforms for the frame of each link and joint with respect to the global world coordinates.  The computed transform for each frame of the robot needs to be stored in the ".xform" field of each link or joint.  For a given link named 'LinkX', this xform field can be accessed as robot.links['LinkX'].xform.  For a given joint named 'JointX', this xform field can be accessed as robot.joints['JointX'].xform.  Once kineval.robotForwardKinematics() completes, the updated transforms for each frame are used by the function kineval.robotDraw() in the support code to render the robot.
+</p>
+
+
+<p>
+A matrix stack recursion can be used to compute these global frames, starting from the base of the robot (specified as a string in robot.base).  This recursion should use the provided local translation and rotation parameters of each joint in relation to its parent link in its traversal of the hierarchy.  For a given joint 'JointX', these translation and rotation parameters are stored in the robot object as robot.joints['JointX'].origin.xyz and robot.joints['JointX'].origin.rpy, respectively.  The current global translation and rotation for the base of the robot (robot.base) in the world coordinate frame is stored in robot.origin.xyz and robot.origin.rpy, respectively.
+</p>
+
+
+<p>
+To run your FK routine, you must toggle out of starting point mode.  This toggle can be done interactively within the GUI menu or by setting kineval.params.just_starting to false.  The code below in "home.html" controls starting point mode invocation, where a single line can be uncommented to use FK mode by default:
+</p>
+
+<pre style="color:black"> <code data-language="javascript">
+// set to starting point mode is true as default
+//   set to false once starting forward kinematics project
+//kineval.params.just_starting = false;
+
+if (kineval.params.just_starting == true) {
+    startingPlaceholderAnimate();
+    kineval.robotDraw();
+    return;
+}
+</code></pre>
+
+<p>
+  <b>Note:</b> The stencil in "kineval/kineval_forward_kinematics.js" states that the user interface reuqires "robot_heading" and "robot_lateral", but these are for Assignment 4. You do not need these variables for this assignment.
+</p>
+
+<h3>Desired Results</h3>
+
+<p>
+The "robots/robot_mr2.js" example should produce the following:
+</p>
+<p> <center>
+<img  width=90% src="images/fk_mr2_example.png">
+</center> </p>
+
+
+<p>
+If implemented properly, the "robots/robot_urdf_example.js" example should produce the following rendering:
+</p>
+<p> <center>
+<img  width=50% src="images/fk_urdf_example.png">
+</center> </p>
+
+<!--
+ (uncomment end 3) -->
+
+<p>
+The "robots/robot_crawler.js" example should produce the following (shown with joint axes highlighted):
+</p>
+<p> <center>
+<img  width=90% src="images/fk_crawler_example.png">
+</center> </p>
+
+<!--
+<!-- (uncomment marker begin 4)
+ -->
+
+<h3> Interactive Hierarchy Traversal</h3>
+<p>
+Additionally, a correct implementation will be able to interactively traverse the kinematic hierarchically by changing the active joint.  The active joint has focus for user control, which will be used in the next assignment.  For now, we are using the active joint to ensure your kinematic hierarchy is correct.  You should be able to move up and down the kinematic hierarchy with the "k" and "j" keys, respectively.  You can also move between the children of a link using the "h" and "l" keys.
+</p>
+
+<h3> Orienting Joint Rendering Cylinders</h3>
+<p>
+The cylinders used as rendering geometries for joints are not aligned with joint axes by default.  The support code in KinEval will properly orient joint rendering cylinders.  To use this functionality, simply ensure that the vector_cross() function is correctly implemented in "kineval/kineval_matrix.js".  vector_cross() will be automatically detected and used to properly orient each joint rendering cylinder.
+</p>
+
+<h3> Undergraduate Advanced Extension </h3>
+
+<p>
+Students in the AutoRob Undergraduate Section can earn one additional point by creating a robot description for the RexArm 4-DOF robot arm, which can be used later in <a href="https://www.youtube.com/playlist?list=PLDutmfAv2lfZ9M0XyYfY4N8EwLJhy58G6">EECS 467 (Autonomous Robotics Laboratory)</a>.  <a href="robot_descriptions/REX Arm STLs.zip">Rexarm link geometries</a> are provided in <a href="https://en.wikipedia.org/wiki/STL_%28file_format%29">STL format</a>.   <a href="https://youtu.be/DTD93KXrfZw">RoBob Ross</a> is an example of a RexArm project from 467 in Winter 2017.  Below is a snapshot of a RexArm in KinEval created by mattdr:
+</p>
+
+<p> <center>
+<img  width=90% src="images/fk_rexarm_example.png">
+</center> <p>
+
+<h3> Graduate Section Requirement</h3>
+<p>
+Students in the AutoRob Graduate Section must: 1) implement the assignment as described above to work with <b>all</b> given examples, which includes the Fetch, Baxter, and Sawyer robot descriptions, and 2) create a new robot description that works with KinEval.
+</p>
+
+<p>
+The files "robots/fetch/fetch.urdf.js", "robots/baxter/baxter.urdf.js", and "robots/sawyer/sawyer.urdf.js" contain the robot data object for the Fetch, Baxter, and Sawyer kinematic descriptions.  The Fetch robot JavaScript file is converted from the <a href="https://github.com/fetchrobotics/fetch_ros/blob/indigo-devel/fetch_description/robots/fetch.urdf">Fetch URDF description</a> for ROS.  A similar process was also done for the <a href="https://github.com/RethinkRobotics/baxter_common/tree/master/baxter_description/urdf">Baxter URDF description</a>.
+</p>
+
+<p>
+ROS uses a different default coordinate system than threejs, which needs to be taken into account in the FK computation for these three robots. ROS assumes that the Z, X, and Y axes correspond to the up, forward, and side directions, respectively.  In contrast, threejs assumes that the Y, Z, and X axes correspond to the up, forward, and side directions.  The variable robot.links_geom_imported will be set to true when geometries have been imported from ROS and set to false when geometries are defined completely within the robot description file. You will need to extend your FK implementation to compensate for the coordinate frame difference when this variable is set to true.
+</p>
+
+<!--
+(uncomment marker end 4)
+-->
+
+<p>
+A proper implementation for fetch.urdf.js description should produce the following (shown with joint axes highlighted):
+</p>
+<p> <center>
+<img  width=90% src="images/fk_fetch_example.png">
+</center> <p>
+</p>
+
+<p>
+The "robots/sawyer/sawyer.urdf.js" example should produce the following:
+</p>
+<p> <center>
+<img  width=90% src="images/fk_sawyer_example.png">
+</center> </p>
+
+<!--
+<!-- (uncomment marker begin 5)
+ -->
+
+<p>
+Your newly created robot description should be placed in the "robots" directory with a filename with your username in the format "robot_uniqueid.js" if no external geometries are used for this robot (similar to the MR2 or Crawler robots).  If external geometries are imported (similar to the Fetch and Baxter), the robot description should be in a new subdirectory with the robot's name.  The robot's name should also be used to name the URDF file, such as "robots/newrobotname/newrobotname.urdf.js".  It is requested that geometries for a new robot go into this directory within a "meshes" subdirectory, such as "robots/newrobotname/meshes".  Guidance can be provided during office hours about creating or converting URDF-based robot description files to KinEval-compliant JavaScript and importing Collada, STL, and Wavefront OBJ geometry files.
+</p>
+
+<p>
+Students are highly encouraged to port URDF descriptions of real world robot platforms into their code.  Such examples of real world robot systems include the 
+<a href="https://github.com/Kinovarobotics/kinova-movo/tree/master/movo_common/movo_description">Kinova Movo</a>, 
+<a href="https://github.com/gkjohnson/nasa-urdf-robots/tree/master/val_description/model">NASA Valkyrie</a> and 
+<a href="https://github.com/gkjohnson/nasa-urdf-robots/tree/master/r2_description">Robonaut 2</a>, 
+<a href="https://github.com/team-vigir/vigir_atlas_common/tree/master/atlas_description">Boston Dynamics Atlas</a>, 
+<a href="https://github.com/ros-industrial/universal_robot/tree/kinetic-devel/ur_description">Universal Robots UR10</a>, 
+and
+<a href="https://github.com/PR2/pr2_common/tree/indigo-devel/pr2_description">Willow Garage PR2</a>. 
+</p>
+
+<p>
+The following KinEval-compatiable robot descriptions were created by students in past offerings of the AutoRob course.  These descriptions are available for your use:
+
+<ul>
+<li><p>Boston Dynamics <a href="robot_descriptions/atlas_yeyangf.zip">Atlas by yeyangf</a></p></li>
+<li><p>Agility Robotics <a href="robot_descriptions/cassie_mungam.zip">Cassie by mungam</a></p></li>
+<li><p>NASA <a href="robot_descriptions/robonaut2_nikhita.zip">Robonaut 2 by nikhita</a></p></li>
+<li><p><a href="robot_descriptions/hsr_sajanptl.zip">Human Support Robot by sajanptl</a></p></li>
+<li><p>KUKA <a href="robot_descriptions/kuka_lbr_iiwa_nmtvijay.zip">Lightweight Arm by nmtvijay</a></p></li>
+<li><p><a href="robot_descriptions/r2d2_eeyan.js">R2D2-like robot by eeyan</a></p></li>
+<li><p>Universal Robots <a href="robot_descriptions/UR10_chengyah.zip">UR10 by chengyah</a></p></li>
+<li><p><a href="robot_descriptions/walle_sarahcc.zip">Wall-E-like robot by sarahcc</a></p></li>
+</ul>
+</p>
+
+<h4> Advanced Extensions </h4>
+
+<p>
+Of the 4 possible advanced extension points, two additional points for this assignment can be earned by generate a proper Denavit-Hartenberg table for the kinematics of the Fetch robot.  This table should be placed in the "robots/fetch" directory in the file "fetchDH.txt". 
+</p>
+
+<p>
+Of the 4 possible advanced extension points, three additional points for this assignment can be earned by implementing LU decomposition (with pivoting) routines for matrix inversion and solving linear systems.  These functions should be named "matrix_inverse" and "linear_solve" and placed within the file containing your matrix routines.
+</p>
+
+<p>
+Of the 4 possible advanced extension points, three additional points for this assignment can be earned by implementing rigid body transformations as dual quaternions (<a href-"http://www.xbdev.net/misc_demos/demos/dual_quaternions_beyond/paper.pdf">Kenwright 2012<a/>), in addition to the products of exponentials method described in class.  Use of dual quaternion transformations must be selectable from the KinEval user interface.
+</p>
+
+
+
+<h3> Project Submission</h3>
+<p>
+For turning in your assignment, push your updated code to the <b>master</b> branch in your repository.  
+</p>
+
+<!--
+(uncomment marker end 5)
+-->
+
+<!--
+<hr>
+<h1> Material beyond this point has not been assigned.  The descriptions below are unofficial and tentative.</h1>
+<hr>
+-->
+
+<p>
+
+<h2 id="assignment4">Assignment 4: Robot FSM Dance Contest </h2>  
+<b>Due 11:59pm, Friday, October 30, 2020</b>
+<p>
+
+<p>
+Executing choreographed motion is the most common use of current robots.  Robot choreography is predominantly expressed as a sequence of setpoints (or desired states) for the robot to achieve in its motion execution.  This form of robot control can be found among a variety of scenarios, such as robot dancing (video below), GPS navigation of autonomous drones, and automated manufacturing.  General to these robot choreography scenarios is a given setpoint controller (such as our PID controller from Pendularm) and a sequence controller (which we will now create).
+</p>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n8-SSwKMGnY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
+
+<p>
+For this assignment, you will build your own robot choreography system.  This choreography system will enable a robot to execute a dance routine by adding motor rotation to its joints and creating a Finite State Machine (FSM) controller over pose setpoints.  Your FK implementation will be extended to consider angular rotation about each joint axis using quaternions for axis-angle rotation.  The positioning of each joint with respect to a given pose setpoint will be controlled by a simple P servo implementation (based on the Pendularm assignment).  You will implement an FSM controller to update the current pose setpoint based on the robot's current state and predetermined sequence of setpoints.  For a single robot, you will choreograph a dance for the robot by creating an FSM with your design of pose setpoints and an execution sequence.
+</p>
+
+<p>
+This controller for the "mr2" example robot was a poor attempt at <a href="https://www.youtube.com/watch?v=YxvBPH4sArQ&feature=youtu.be&t=107">robot Saturday Night Fever</a> (please do better):
+</p>
+
+<a href="asgn4_joint_rotation.png"><img width=100% src="images/asgn4_joint_rotation_small.png"></a>
+
+<p>
+This <a href="https://www.youtube.com/embed/WyQ9aoB3bpI">updated dance</a> controller for the Fetch robot is a bit better, but still very far from optimal:
+</p>
+
+<center>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/WyQ9aoB3bpI" frameborder="0" allowfullscreen></iframe>
+</center>
+
+
+<!-- 
+<!-- (uncomment marker begin 6)
+-->
+<h3>Features Overview</h3>
+
+<p>
+  This assignment requires the following features to be implemented in the corresponding files in your repository:
+</p>
+
+<ul>
+  <li> <p>Quaternion joint rotation in "kineval/kineval_quaternion.js" (for quaternion functions) and "kineval/kineval_forward_kinematics" (to add axis-angle joint rotation to existing kinematic traversal)</p></li>
+  <li> <p>Interactive base control vectors in "kineval/kineval_forward_kinematics.js"</p></li>
+  <li> <p>Pose setpoint controller in "kineval/kineval_servo_control.js"</p></li>
+  <li> <p>Dance FSM in "kineval/kineval_servo_control.js" (FSM controller) and "home.html" (dance setpoint initialization)</p></li>
+  <li> <p>[Grad section only] Joint limit enforcement in "kineval/kineval_controls.js"</p></li>
+  <li> <p>[Grad section only] Prismatic joint implementation in "kineval/kineval_forward_kinematics.js"</p></li>
+  <li> <p><s>[Grad section only] Fetch rosbridge interface</s> <i>Cancelled due to COVID-19</i></p></li>
+</ul>
+
+<p>
+  Points distributions for these features can be found in the <a href="#project_rubric">project rubric section</a></td>. More details about each of these features and the implementation process are given below.
+</p>
+
+<!--
+<h3>Relevant Files</h3>
+<p>
+The following files are included (within script tags) in your "home.html".  You will modify these files for implementing axis-angle rotation, the pose setpoint controller, and the FSM controller:
+
+<ul>
+<li><p>"kineval/kineval_quaternion.js" for your implementation of quaternions for axis-angle rotation in 3D</p></li>
+<li><p>"kineval/kineval_forward_kinematics.js" to augment your existing kinematic traversal to account for axis-angle joint rotation</p></li>
+<li><p>"kineval/kineval_controls.js" includes function kineval.applyControls() to apply a control update to the robot's base and angle of each joint, as well as updating the camera position; this update just does an addition and does not consider a physical model of dynamics</p></li>
+<li><p>"kineval/kineval_servo_control.js" for your implementation of a P servo controller and an FSM pose sequencer</p></li>
+</ul>
+</p>
+-->
+
+<h3>Joint Axis Rotation and Interactive Joint Control</h3>
+
+<p>
+Going beyond the joint properties you worked with in Assignment 3, each joint of the robot now needs several additional properties for joint rotation and control.  These joint properties for the current angle rotation (".angle"), applied control (".control"), and servo parameters (".servo") have already been created within the function kineval.initRobotJoints().  The joint's angle will be used to calculate a rotation about the joint's (normal) axis of rotation vector, specified in the ".axis" field.  To complete an implementation of 3D rotation due to joint movement, you will need to first implement basic quaternion functions in "kineval/kineval_quaternion.js" then extend your FK implementation in "kineval/kineval_forward_kinematics.js" to account for the additional rotations.
+</p>
+
+<p>
+If joint axis rotation is implemented correctly, you should be able to use the 'u' and 'i' keys to move the currently active joint.  These keys respectively decrement and increment the ".control" field of the active joint.  Through the function kineval.applyControls(), this control value effectively adds an angular displacement to the joint angle.
+</p>
+
+<h3>Interactive Base Movement Controls</h3>
+
+<p>
+The user interface also enables controlling the global position and orientation of the robot base.  In addition to joint updates, the system update function kineval.applyControls() also updates the base state (in robot.origin) with respect to its controls (specified in robot.controls).  With the support function kineval.handleUserInput(), the 'wasd' keys are purposed to move the robot on the ground plane, with 'q' and 'e' keys for lateral base movement.  In order for these keys to behave properly, you will need to add code to update variables that store the heading and lateral directions of the robot base: robot_heading and robot_lateral.  These vectors need to be computed within your FK implementation in "kineval/kineval_forward_kinematics.js" and stored as global variables. They express the directions of the robot base's z-axis and x-axis in the global frame, respectively. Each of these variables should be a homogeneous 3D vector stored as a 2D array.
+</p>
+
+<p>
+If robot_heading and robot_lateral are implemented properly, the robot should now be interactively controllable in the ground plane using the keys described in the previous paragraph.
+</p>
+
+<h3>Pose Setpoint Controller</h3>
+
+<p>
+Once joint axis rotation is implemented, you will implement a proportional setpoint controller for the robot joints in function kineval.robotArmControllerSetpoint() within "kineval/kineval_servo_control.js".  The desired angle for a joint 'JointX' is stored in kineval.params.setpoint_target['JointX'] as a scalar by the FSM controller or keyboard input. The setpoint controller should take this desired angle, the joint's current angle (".angle"), and servo gains (specified in the ".servo" object) to set the control (".control") for each joint.   All of these joint object properties are initialized in the function kineval.initRobotJoints() in "kineval/kineval_robot_init_joints.js". Note that the "servo.d_gain" is not used in this assignment; it is for advanced extensions.
+</p>
+
+<p>
+Once you have implemented the control function described above, you can enable the conroller by either holding down the 'o' key or selecting 'persist_pd' from the UI.  With the controller enabled, the robot will attempt to reach the current setpoint. One setpoint is provided with the stencil code: the zero pose, where all joint angles are zero. Pressing the '0' key sets the current setpoint to the zero setpoint.
+</p>
+
+<p>
+Besides the zero setpoint, up to 9 other arbitrary pose setpoints can be stored by KinEval (in kineval.setpoints) for pose control. You can edit kineval.setpoints in your code for testing and/or for the FSM controller (see below), but the current robot pose can also be interactively stored into the setpoint list by pressing "Shift+number_key" (e.g., "Shift+1" would store the current robot pose as setpoint 1). You can then select any of the stored setpoints to be the current control target by pressing one of the non-zero number keys [1-9] that corresponds to a previously-stored setpoint.  At any time, the currently stored setpoints can be output to the console as JavaScript code using the JSON.stringify function for the setpoint object: "JSON.stringify(kineval.setpoints);".  Once you have found the setpoints needed to implement your desired dance, this setpoint array can be included in your code as part of your dance controller.
+</p>
+
+<p>
+Since you will need to implement your setpoint controller before your FSM controller, for additional testing of your setpoint controller, a "clock movement" FSM controller has been provided as the function setpointClockMovement() in "kineval/kineval_servo_control.js".  This function can be invoked by holding down the 'c' key or from the UI.  This controller goes well with <a href="https://www.youtube.com/watch?v=_JPa3BNi6l4"> this song</a>.
+</p>
+
+
+
+<h3>FSM Controller</h3>
+
+<p>
+  Once your pose setpoint controller is working, an FSM controller should be implemented in the function kineval.setpointDanceSequence() in "kineval/kineval_servo_control.js".  The reference implementation switches between the pose setpoints in kineval.setpoints based on two additional pieces of data: an array of indices (kineval.params.dance_sequence_index) and the current pose index (kineval.params.dance_pose_index). kineval.params.dance_sequence_index will tell your FSM the order in which the setpoints in kineval.setpoints should be selected to be the control target. Note that using this convention allows you to easily select the same setpoint multiple times to produce repetition in your dance. kineval.params.dance_pose_index is used to keep track of the current index within the dance pose sequence.
+</p>
+
+<p>
+If this recommended variable convention is not used, the following line in "kineval/kineval_userinput.js" will require modification:
+</p>
+
+<pre style="color:black"><code data-language="javascript">
+if (kineval.params.update_pd_dance)
+    textbar.innerHTML += "executing dance routine, pose " + kineval.params.dance_pose_index + " of " + kineval.params.dance_sequence_index.length;
+</code></pre>
+
+<p>
+To complete your dance controller, choreograph a dance by initializing kineval.setpoints with the poses for your dance and kineval.params.dance_sequence_index with the pose ordering. You should initialize these data structures within the my_init() function in "home.html". Once you have the poses and sequence for your dance initialized, when you select both "persist_pd" and "update_pd_dance" in the UI, you should see the robot move through the setpoints of your dance.
+</p>
+
+<h3> Graduate Section Requirements</h3>
+<p>
+Students in the graduate section of AutoRob must implement the assignment as described above for the Fetch and Baxter robots with two additional requirements: 1) proper implementation of all joint types in the robot descriptions and 2) proper enforcement of joint limits for the robot descriptions. <!--and 3) integration (via <a href="http://wiki.ros.org/rosbridge_suite">rosbridge</a>) of their code with ROS or a <a href="http://docs.fetchrobotics.com/gazebo.html">Gazebo simulation of the Fetch</a>.-->
+
+<p>
+The urdf.js files for these robots, included in the provided code stencil, contain joints with with various types that correspond to different types of motion:
+</p>
+
+<p>
+<ul>
+<li><p>continuous: rotation about the joint axis with no joint limits</p></li>
+<li><p>revolute: rotation about the joint axis with joint limits</p></li>
+<li><p>prismatic: translation along the joint axis with joint limits</p></li>
+<li><p>fixed: no motion of the joint</p></li>
+</ul>
+</p>
+
+<p>
+Joints are considered to be continuous as the default.  Joints with undefined motion types must be treated as continuous joints. The graduate section features for this assignment will be complete when your implementation correctly handles the direction of motion (rotation or translation) and limits of all of the above types of joints.
+</p>
+
+
+<p>
+  <i>Note: Rosbridge feature cancelled due to COVID-19.</i>
+  <s>
+    Your code can interface with any robot (or simulated robot) running rosbridge/ROS using the function kineval.rosbridge() in "kineval/kineval_rosbridge.js".  This code requires that the rosbridge_server package is running in a ROS run-time environment and listening on a websocket port, such as for ws://fetch7:9090.  If your FK implementation is working properly, the model of your robot in the browser will update along with the motion of the robot based on the topic subscription and callback.  This functionality works seamlessly between real and simulated robots.  Although this will not be done for this class, to control the robot arm, a rosbridge publisher must be written to update the ROS topic "/arm_controller/follow_joint_trajectory/goal" with a message of type "control_msgs/FollowJointTrajectoryActionGoal".
+  </s>
+</p>
+
+<p>
+  <s>
+    Machines running rosbridge, ROS, and Gazebo for the Fetch will be available during special sessions of the class.  Students are encouraged to install and run the Fetch simulator on their own machines based on <a href="http://docs.fetchrobotics.com/gazebo.html">this tutorial</a>.
+  </s>
+</p>
+
+
+<h4> Advanced Extensions </h4>
+
+<p>
+Of the 4 possible advanced extension points, one additional point for this assignment can be earned by adding the capability of displaying laser scans from a real or simulated Fetch robot.
+</p>
+
+<p>
+Of the 4 possible advanced extension points, four additional points for this assignment can be earned by adding the capability of displaying 3D point clouds from a real or simulated Fetch robot and computing surface normals about each point.
+</p>
+
+<p>
+Of the 4 possible advanced extension points, four additional points for this assignment can be earned by implementing dynamical simulation through the recursive <a href="http://robotics.usc.edu/~aatrash/cs545/CS545_lecture_11_new.pdf">Newton-Euler algorithm</a> (Spong Ch.7).  This dynamical simulation update be implemented as function kineval.updateDynamicsNewtonEuler() in the file "kineval/kineval_controls.js".  In "home.html", the call to kineval.updateDynamicsNewtonEuler() should replace the call purely kinematic update in kineval.applyControls().
+</p>
+
+<p>
+Of the 4 possible advanced extension points, four additional points for this assignment can be earned by developing and implementing a dynamical simulation of biped hopper.  Permission by the course staff must be granted first before attempting this advanced extension.
+</p>
+
+<h3> Project Submission</h3>
+<p>
+For turning in your assignment, push your updated code to the <b>master</b> branch in your repository.  
+</p>
+
+
+<p>
+
+<!--
+<hr>
+<h1> Material beyond this point has not been assigned.  The descriptions below are unofficial and tentative.</h1>
+<hr>
+-->
+
+<!-- 
+(uncomment marker end 6) -->
+
+
+<p>
+
+
+
+<h2 id="assignment5">Assignment 5: Inverse Kinematics </h2>  
+<p>
+<b>Due 11:59pm, <s>Wednesday, November 11</s> Wednesday, November 18, 2020</b>
+
+<p>
+Although effective, robot choreography in configuration space is super tedious and inefficient.  This difficulty is primarily due to posing each joint of the robot at each setpoint.  Further, changing one joint often requires updating several other joints due to the nature of kinematic dependencies.  Inverse kinematics (IK) offers a much easier and efficient alternative.  With IK implemented, we only need to pose the endeffector in a common workspace, and the states of the joints in configuration space are automatically inferred.  IK is also important when we care about the "tool tip" of an instrument being used by a robot.  One such example is a robot using marker to draw a picture, such as in the PR2 Portrait Bot Project below:
+</p>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qVS7oylkTwY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
+
+<p>
+For this assignment, you will now control your robot to reach to a given point in space through inverse kinematics for position control of the robot endeffector.  Inverse kinematics will be implemented through gradient descent optimization with both the Jacobian Transpose and Jacobian Pseudoinverse methods, although only one will be invoked at run-time.  
+</p>
+
+<img width=100% src="images/kineval_fetch.png">
+
+<p>
+As shown in the video below, if successful, your robot will be able to continually place its endeffector (indicated by the blue cube) exactly on the reachable target location (indicated by the green cube), regardless of the robot's specific configuration:
+</p>
+
+<center>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/ag0j8HzFRzc" frameborder="0" allowfullscreen></iframe>
+</center>
+
+<h3>Features Overview</h3>
+
+<p>
+  This assignment requires the following features to be implemented in the corresponding files in your repository:
+</p>
+
+<ul>
+  <li> <p>Manipulator Jacobian in "kineval/kineval_inverse_kinematics.js"</p></li>
+  <li> <p>Gradient descent with Jacobian transpose in "kineval/kineval_inverse_kinematics.js"</p></li>
+  <li> <p>Jacobian pseudoinverse in "kineval/kineval_matrix.js" (pseudoinverse function) and "kineval/kineval_inverse_kinematics.js" (use in gradient descent)</p></li>
+  <li> <p>[Grad section only] Euler angle conversion in "kineval/kineval_inverse_kinematics.js"</p></li>
+</ul>
+
+<p>
+  Points distributions for these features can be found in the <a href="#project_rubric">project rubric section</a></td>. More details about each of these features and the implementation process are given below.
+</p>
+
+
+<!-- 
+<!-- (uncomment marker begin 7, copy above to block uncomment or below to block comment)
+  -->
+<h3>Matrix Pseudoinverse Function</h3>
+<p>
+  You will need to implement one additional matrix helper function in "kineval/kineval_matrix.js" for this assignment: matrix_pseudoinverse. This method will be necessary for the pseudoinverse version of gradient descent (see below). For this helper function, you are allowed to use a library function for matrix inversion, which can be invoked by using the provided routine numeric.inv(mat), available through <a href="https://github.com/sloisel/numeric">numericjs</a>.
+</p>
+
+<h3>Core IK Function</h3>
+
+<p>
+The core of this assignment is to complete the kineval.iterateIK() function in the file kineval/kineval_inverse_kinematics.js. This function is invoked within the function kineval.inverseKinematics()  with three arguments:
+</p>
+
+<ul>
+<li><p>endeffector_target_world: an object expressing the endeffector target in the world frame; it has two fields, endeffector_target_world.position, the target endeffector position (as a 3D homogeneous vector), and endeffector_target_world.orientation, the target endeffector orientation (as Euler angles)</p></li>
+<li><p>endeffector_joint: the name of the joint directly connected to the endeffector</p></li>
+<li><p>endeffector_position_local: the location of the endeffector in the local joint frame</p></li>
+</ul>
+
+<p>
+From these arguments and the current robot configuration, the kineval.iterateIK() function will compute controls for each joint.  Upon update of the joints, these controls will move the configuration and endeffector of the robot closer to the target.
+</p>
+
+<p>
+<b>Important:</b> Students enrolled in EECS 398 will implement inverse kinematics for <b>only</b> the position, not the orientation, of the endeffector.
+</p>
+
+<p>
+kineval.iterateIK() should also respect global parameters for using the Jacobian pseudoinverse (through boolean parameter kineval.params.ik_pseudoinverse) and step length of the IK iteration (through real-valued parameter kineval.params.ik_steplength).  Note that these parameters can be changed through the user interface (under Inverse Kinematics). KinEval also maintains the current endeffector target information in the kineval.params.ik_target parameter.
+</p>
+
+<p>
+IK iterations can be invoked through the user interface (Inverse Kinematics->persist_ik) or by holding down the 'p' key.  Further, the 'r'/'f' keys will move the target location up/down. You can also move the robot relative to the target using the robot base controls. When performing IK iterations, the endeffector and its target pose will be rendered as cube geometries in blue and green, respectively.
+</p>
+
+<p>
+  For your code to work with the CI grader, you will need to set three global variables in kineval.iterateIK(): robot.dx, robot.jacobian, and robot.dq. There is a comment in "kineval/kineval_inverse_kinematics.js" that specifies what each of these variables should hold. Please note that robot.dx and robot.jacobian should both have six rows, even if you are doing position-only IK.
+</p>
+
+<p>
+In implementing this IK routine, please also remember the following:
+<p>
+<ul>
+<li><p>Computation of the Jacobian need only to occur with respect to the joints along the chain from the endeffector joint to the robot base</p></li>
+<li><p>The location of the endeffector needs to be computed using transforms resulting from the robot's forward kinematics </p> </li>
+<li><p>The computed velocity in configuration space should be applied to the robot through the .control field of each joint </p></li>
+</ul>
+
+<h3> IK Random Trial </h3>
+
+<p>
+All students in the AutoRob course are expected to run their IK controller with the random trial feature in the KinEval stencil.  The IK random trial is executed through the function kineval.randomizeIKtrial() in the file "kineval/kineval_inverse_kinematics.js".  This function is incomplete in the provided stencil.  Code for this function to properly run the random trial will be made available in the assignment 5 discussion channel. Once you have copied the necessary code into this function, you will be able to test your code on random trials by first selecting persist_ik (under Inverse Kinematics) then selecting execute (under Inverse Kinematics->IK Random Trial) from the user interface.
+<p>
+
+<h3> Undergraduate Advanced Extension </h3>
+<p>
+Students in the AutoRob Undergraduate Section can earn one additional point by implementing a closed-form inverse kinematics solution for the RexArm 4-DOF robot arm, which can be used later projects in <a href="https://www.youtube.com/playlist?list=PLDutmfAv2lfZ9M0XyYfY4N8EwLJhy58G6">EECS 467 (Autonomous Robotics Laboratory)</a>.  
+</p>
+
+<h3> Graduate Section Requirement</h3>
+
+<p>
+Students enrolled in the graduate section of AutoRob will implement inverse kinematics for both the position and orientation of the endeffector, namely for the Fetch robot.  The default IK behavior will be position-only endeffector control.  Both endeffector position and orientation should be controlled when the boolean parameter kineval.params.ik_orientation_included is set to true, which can be done through the user interface (Inverse Kinematics->ik_orientation_included).
+</p>
+
+<p>
+  In order to handle the orientation of the endeffector in your IK implementation, you will need to calculate the orientation part of the error term, which will require you to implement a conversion from a rotation matrix to Euler angles. You may find an online reference to inform your implementation of this conversion (please cite it in a comment in your code) or develop your own approach to the conversion calculation. Completing this conversion is a necessary step for including orientation in your IK implementation, and it also fulfills the "Euler angle conversion" feature.
+</p>
+
+<h4> Advanced Extensions </h4>
+
+<p>
+Of the 4 possible advanced extension points, one additional point for this assignment can be earned by reaching to 100 targets in a random trial within 60 seconds.  A video of this execution must be provided to demonstrate this achievement.  This video file should be in the repository root directory with the name "IK100in60" and appropriate file extension.
+</p>
+
+<p>
+Of the 4 possible advanced extension points, three additional points for this assignment can be earned by implementing the <a href="http://ieeexplore.ieee.org/document/86079/">Cyclic Coordinate Descent (CCD)</a> inverse kinematics algorithm by Wang and Chen (1991).  This function should be implemented in the file "kineval/kineval_inverse_kinematics.js" as another option within the function kineval.iterateIK().
+</p>
+
+<p>
+Of the 4 possible advanced extension points, three additional points for this assignment can be earned by implementing <a href="https://en.wikipedia.org/wiki/Nelder%E2%80%93Mead_method">downhill simplex optimization</a> to perform inverse kinematics.  This function should be implemented in the file "kineval/kineval_inverse_kinematics.js" as another option within the function kineval.iterateIK().
+</p>
+
+<p>
+Of the 4 possible advanced extension points, four additional points for this assignment can be earned by implementing resolved-rate inverse kinematics with null space constraints to respect joint limits.  This function should be implemented in the file "kineval/kineval_inverse_kinematics.js" as another option within the function kineval.iterateIK().
+</p>
+
+<p>
+Of the 4 possible advanced extension points, four additional points for this assignment can be earned by extending your IK controller to use potential fields to avoid collisions.
+</p>
+
+<p>
+Of the 4 possible advanced extension points, one additional point for this assignment can be earned by implementing a search mechanism to automatically find appropriate PID gains for the Pendularm.  This implementation should be placed in the file "project_pendularm/pendularm1_gainsearch.html" and allow for arbitrary initial PID gains for the search to be set in the variable "initial_gains".
+</p>
+
+
+<h3> Project Submission</h3>
+
+<p>
+For turning in your assignment, ensure your completed project code has been committed and pushed to the <i>master</i> branch of your repository.  
+</p>
+
+<!-- (put this line below block comment end for block commenting, above for visibility
+(comment marker end 7) -->
+
+<!--
+<hr>
+<h1> Material beyond this point has not been assigned.  The descriptions below are unofficial and tentative.</h1>
+<hr>
+ -->
+
+
+<h2 id="assignment6">Assignment 6: Motion Planning</h2>
+<p>
+<b>Due 11:59pm, <s>Monday, December 7</s> Tuesday, December 8, 2020</b>
+</p>
+
+<p>
+Our last programming project for AutoRob returns to search algorithms for generating navigation setpoints, but now for a high-dimensional robot arm.  The A-star graph search algorithm in Assignment 1 is a good fit for path planning when the space to explore is limited to the two degrees-of-freedom of a robot base.  However, as the number of degrees-of-freedom of our robot increases, our search complexity will grow exponentially towards intractability. For such high-dimensional search problems, an exhaustive overview of the majority of the space is not an option. Instead, we now look to sampling-based search algorithms, which will introduce randomness to our search process. These sampling-based algorithms trade off the guarantees and optimality of exhaustive graph search for viably tractable planning in complex environments.  The example below shows one example of sampling-based planning navigating to move a rod through a narrow passageway:
+</p>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BPelkdxt1iU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
+
+<p>
+and such planning is also used in simple tabletop scenarios:
+</p>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ag-txw4KUgo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
+
+<p>
+  For this assignment, you will now implement a collision-free motion planner to enable your robot to navigate from a random configuration in the world to its home configuration (or "zero configuration").  This home configuration is where every robot DOF has a zero value.  For your planning implementation, the configuration space includes the state of each joint and the global orientation and position of the robot base.  Thus, the robot must move to its original state at the origin of the world. A visual explanation of this desired behavior is below:
+</p>
+
+<img src="images/asgn6_motionplan.png"  width=100%>
+
+<p>
+For both the undergraduate and graduate sections, motion planning will be implemented through the <a href="http://www.cs.cmu.edu/afs/cs/academic/class/15494-s12/readings/kuffner_icra2000.pdf">RRT-Connect algorithm</a> (described by Kuffner and LaValle). The graduate section will additionally implement the <a href="http://dspace.mit.edu/openaccess-disseminate/1721.1/63170">RRT-Star</a> (alternate paper <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5980479">link<a/> via IEEE) motion planner of Karaman et al. (ICRA 2011).
+</p>
+
+<h3>Features Overview</h3>
+
+<p>
+  This assignment requires the following features to be implemented in the corresponding files in your repository:
+</p>
+
+<ul>
+  <li> <p>Collision detection in "kineval/kineval_collision.js"</p></li>
+  <li> <p>2D RRT-Connect in "project_pathplan/rrt.js"</p></li>
+  <li> <p>Configuration space RRT-Connect in "kineval/kineval_rrt_connect.js"</p></li>
+  <li> <p>[Grad section only] 2D RRT-Star in "project_pathplan/rrt.js"</p></li>
+</ul>
+
+<p>
+  Points distributions for these features can be found in the <a href="#project_rubric">project rubric section</a></td>. More details about each of these features and the implementation process are given below.
+</p>
+
+<!--
+<!-- (uncomment marker begin 8)
+-->
+<h3>2D RRT-Connect</h3>
+
+<p>
+  To gain familiarity with the RRT-Connect algorithm, you can start this assignment by returning to the 2D world from Assignment 1. If needed, refer back to the Assignment 1 description for a description of the search canvas environment and its parameters. You can enable RRT-Connect as the search algorithm through the URL parameter search_alg: "search_canvas.html?search_alg=RRT-connect".
+</p>
+
+<p>
+  You will implement the 2D version of RRT-Connect in project_pathplan/rrt.js by completing the iterateRRTConnect() function. Its signature and desired return values are provided in the code stencil. Note that there are other function stencils provided in this file as well, but your 2D RRT-Connect implementation should involve only iterateRRTConnect() and any helper functions you choose to add. You do <b>not</b> need to implement iterateRRT(), and only students in the graduate section need to implement iterateRRTStar() (see description of graduate section requirements below).
+</p>
+
+<p>
+  A few other details to be aware of when implementing 2D RRT-Connect:
+</p>
+
+<ul>
+  <li> <p>The two search tree global variables needed for RRT-Connect, T_a and T_b, are initialized for you in project_pathplan/infrastructure.js</p></li>
+  <li> <p>You can use provided support functions from project_pathplan/infrastructure.js, including two new RRT-specific helpers: insertTreeVertex() and insertTreeEdge()</p></li>
+  <li> <p>You may also create additional helper functions in project_pathplan/rrt.js to handle different steps of the RRT-Connect algorithm; some suggestions are provided in the code stencil</p></li>
+  <li> <p>iterateRRTConnect() is called for you from the animation code, and it should perform just one iteration of the RRT-Connect algorithm each time it is called</p></li>
+  <li> <p>You should use drawHighlightedPath(), <b>not</b> drawHighlightedPathGraph(), to visualize the final path found by RRT-Connect; see the implementation in draw.js for information about how this function works</p></li>
+</ul>
+
+
+<p>
+  If properly implemented, your RRT-Connect implementation should produce results similar to the image below, although the inherent randomness of the algorithm will mean that the sampled states and final path will be slightly different:
+</p>
+
+<center>
+<img src="images/rrt_connect.png"  width=600>
+</center>
+
+<h3>Getting Started in Configuration Space</h3>
+<p>
+The core of this assignment is to complete the robot_rrt_planner_init() and robot_rrt_planner_iterate() in kineval/kineval_rrt_connect.js. This file and the collision detection file kineval/kineval_collision.js have already been included in home.html for you:
+</p>
+
+<pre style="color:black"><code data-language="javascript">
+    &lt;script src="kineval/kineval_rrt_connect.js">&lt/script>
+    &lt;script src="kineval/kineval_collision.js">&lt/script>
+</code></pre>
+
+<p>
+The code stencil will automatically load a default world.  A different world can be specified as an appended parameter within the URL: "home.html?world=worlds/world_name.js".
+The world file specifies the global objects "robot_boundary", which describes the min and max values of the world along the X, Y, and Z axes, and "robot_obstacles", which contains the locations and radii of sphere obstacles.  To ensure the world is rendered in the display and available for collision detection, the geometries of the world are included through the provided call to kineval.initWorldPlanningScene() in kineval/kineval.js.
+</p>
+
+
+<h3>Collision Detection Setup</h3>
+<p>
+  In the search canvas world, a collision detection function was provided for you. For RRT-Connect in robot configuration space, you will need to start by completing the collision detection feature yourself. The main collision detection function used by configuration-space RRT-Connect is kineval.robotIsCollision() (in kineval/kineval_collision.js), which detects robot-world collisions with respect to a specified world geometry.
+</p>
+
+<p>
+  Worlds are specified as a rectangular boundary and sphere obstacles.  A collection of worlds are provided in the "worlds/" subdirectory of kineval_stencil.  The collision detection system performs two forms of tests: 1) testing of the base position of the robot against the rectangular extents of the world, which is provided by default, and 2) testing of link geometries for a robot configuration against spherical objects, which depends on code you will write.
+</p>
+
+<p>
+  Collision testing for links in a configuration should be performed by AABB/Sphere tests that require the bounding box of each link's geometry in the coordinates of that link. This bounding box is computed for you by the following code within the loop inside kineval.initRobotLinksGeoms() in kineval.js:
+</p>
+
+<pre style="color:black"><code data-language="javascript">
+    // For collision detection,
+    // set the bounding box of robot link in local link coordinates
+    robot.links[x].bbox = new THREE.Box3;
+    // setFromObject returns world space bbox
+    robot.links[x].bbox = robot.links[x].bbox.setFromObject(robot.links[x].geom);
+  </code>
+</pre>
+
+<p>
+  As you write the collision test, you can thus access the AABB for any robot link as robot.links[x].bbox. This object contains two elements, max and min, that contain the maximum and minimum corners of the link's bounding box, specified in the link's local coordinate frame.
+</p>
+
+<!--
+(end comment marker 8) --> 
+<!-- -->
+
+<p>
+  Even before your planner is implemented, you can use the collision system interactively with your robot.  The provided kineval.robotIsCollision() function is called for you during each iteration from my_animate() in home.html:
+</p>
+
+<pre style="color:black"><code data-language="javascript">
+    // determine if robot is currently in collision with world
+    kineval.robotIsCollision();
+</code></pre>
+
+<!-- 
+<!-- (uncomment marker begin 9)
+-->
+
+<h3>Completing Collision Detection</h3>
+<p>
+
+To complete the collision system, you will need to modify the forward kinematics calls in kineval/kineval_collision.js.  Specifically, you will need to perform a traversal of the forward kinematics of the robot for an arbitrary robot configuration within the function kineval.poseIsCollision().  kineval.poseIsCollision() takes in a vector in the robot's configuration space and returns either a boolean false for no detected collision or a string with the name of a link that is in collision.  As a default, this function performs base collision detection against the extents of the world.  For collision detection of each link, this function will make a call to function that you create called robot_collision_forward_kinematics() to recursively test for collisions along each link.  Your collision FK recursion should use the link collision function, traverse_collision_forward_kinematics_link(), which is provided in kineval/kineval_collision.js, along with a joint traversal function that properly positions the link and joint frames for the given configuration.
+</p>
+
+<!--
+<pre style="color:black"><code data-language="javascript">
+function collision_FK_link(link,mstack,q) {
+
+  // this function is part of an FK recursion to test each link 
+  //   for collisions, along with a joint traversal function for
+  //   the input robot configuration q
+  //
+  // this function returns the name of a robot link in collision
+  //   or false if all its kinematic descendants are not in collision
+
+  // test collision by transforming obstacles in world to link space
+  mstack_inv = numeric.inv(mstack);
+  // (alternatively) mstack_inv = matrix_invert_affine(mstack);
+
+  var i; var j;
+
+  // test each obstacle against link bbox geometry 
+  //   by transforming obstacle into link frame and 
+  //   testing against axis aligned bounding box
+  for (j in robot_obstacles) {
+
+    var obstacle_local = 
+      matrix_multiply(mstack_inv,robot_obstacles[j].location);
+
+    // assume link is in collision as default
+    var in_collision = true;
+
+    // return false if no collision is detected such that
+    //   obstacle lies outside the link extents 
+    //   along any dimension of its bounding box
+    if (
+      (obstacle_local[0][0]<
+       (link.bbox.min.x-robot_obstacles[j].radius)
+      )
+      ||
+      (obstacle_local[0][0]>
+       (link.bbox.max.x+robot_obstacles[j].radius)
+      )
+    )
+      in_collision = false;
+
+    if (
+      (obstacle_local[1][0]<
+       (link.bbox.min.y-robot_obstacles[j].radius)
+      )
+      ||
+      (obstacle_local[1][0]>
+       (link.bbox.max.y+robot_obstacles[j].radius)
+      )
+    )
+      in_collision = false;
+
+    if (
+      (obstacle_local[2][0]<
+       (link.bbox.min.z-robot_obstacles[j].radius)
+      )
+      ||
+      (obstacle_local[2][0]>
+       (link.bbox.max.z+robot_obstacles[j].radius)
+      )
+    )
+      in_collision = false;
+
+    // return name of link for detected collision if
+    //   obstacle lies within the link extents 
+    //   along all dimensions of its bounding box
+    if (in_collision)
+      return link.name;
+  }
+
+  // recurse child joints for collisions, 
+  //   returning name of descendant link in collision
+  //   or false if all descendants are not in collision
+  if (typeof link.children !== 'undefined') { 
+    var local_collision;
+    for (i in link.children) {
+       // STUDENT: create this joint FK traversal function 
+       local_collision = 
+         collision_FK_joint(robot.joints[link.children[i]],mstack,q)
+       if (local_collision)
+         return local_collision;
+     }
+  }
+
+  // return false, when no collision detected for this link and children
+  return false;
+}
+</code></pre>
+
+
+<p>
+kineval_collision.js uses matrix and quaternion calls based on the reference implementation (i.e., the instrutor's code).  Your matrix and quaternion calls likely have a different structure to the function arguments and returned data structures.  You should either:
+</p>
+
+ <ul>
+  <li><p>modify calls to matrix/quaternion routines to fit your functions, or</p></li>
+
+  <li><p> use a modified version of your own FK with the collision test added to the link traversal function (remember: you need the inverse of the matrix stack for collision testing in a link frame)</p></li>
+</ul>
+<p>
+  -->
+<p>
+  Some pointers about your collision FK traversal:
+</p>
+
+<ul>
+  <li> <p>Remember that you need the inverse of the matrix stack for collision testing in a link frame (instead of in the world frame)</p></li>
+  <li> <p>You can feel free to implement matrix_invert_affine() instead of using numeric.inv().  Affine transforms can be inverted (in constant time, Quiz 3!) through a much simpler process than the generic matrix inversion, which is O(n^3) for Gaussian elimination.</p></li>
+</ul>
+
+<p>
+If successful to this point, you should be able to move the robot around the world and see the colliding link display a red wireframe when a collision occurs. There could be many links in collision, but only one will be highlighted, as shown in the following examples:
+</p>
+
+<p>
+<center>
+<img src="images/rrt_collision_boundary.png" width=48%>
+<img src="images/rrt_collision_link.png" width=48%>
+</center>
+</p>
+
+
+
+<h3>Implementing and Invoking the Planner</h3>
+
+<p>
+  Your motion planner will be implemented in the file kineval/kineval_rrt_connect.js through the functions kineval.robotRRTPlannerInit() and robot_rrt_planner_iterate(). This implementation can be a port of your 2D RRT-Connect, but it will require some updates to work with in the configuration space of KinEval robots. The kineval.robotRRTPlannerInit() function should be modified to initialize the RRT trees and other necessary variables. The robot_rrt_planner_iterate() function should be modified to perform a <b>single</b> RRT-Connect iteration based on the current RRT trees.
+</p>
+
+<p>
+  Basic RRT tree support functions are provided for initialization, adding configuration vertices (which renders "breadcrumb" indicators of base positions explored), and adding graph edges between configuration vertices.  This function should <b>not</b> use a for loop to perform multiple planning iterations, as this will cause the browser to block and become unresponsive.  Instead, the planner will be continually called asynchronously by the code stencil until a motion plan solution is found.
+</p>
+
+<p>
+<b>Important:</b> Your planner should be constrained such that the search does not consider configurations where the base is outside the X-Z plane.  Specifically, the base should not translate along the Y axis, and should not rotate about the X and Z axes.
+</p>
+
+<p>
+Once implemented, your planner will be invoked interactively by first moving the robot to an arbitrary non-colliding configuration in the world and then pressing the "m" key.  The "m" key will request the generation of a motion plan. The goal of a motion plan will always be the home configuration, as defined in the introduction to this assignment.  While the planner is working, it will not accept new planning requests.  Thus, you can move the robot around while the planner is executing.
+</p>
+
+
+<h3>Planner Output</h3>
+<p>
+The output of your planner will be a motion path in a sequentially ordered array (named kineval.motion_plan[]) of RRT vertices.  Each element of this array contains a reference to an RRT vertex with a robot configuration (.vertex), an array of edges (.edges), and a threejs indicator geometry (.geom).  Once a viable motion plan is found, this path can be highlighted by changing the color of the RRT vertex "breadcrumb" geom indicators.  The color of any configuration breadcrumb indicator in a tree can be modified, such as in the following example for red:
+</p>
+
+<pre style="color:black"><code data-language="javascript">
+  tree.vertices[i].geom.material.color = {r:1,g:0,b:0};
+</code></pre>
+
+<p>
+The user should should be able to interactively move the robot through the found plan.  Stencil code in user_input() within kineval_userinput.js will enable the "n" and "b" keys to move the robot to the next and previous configuration in the found path, respectively.  These user key presses will respectively increment and decrement the parameter kineval.motion_plan_traversal_index such that the robot's current configuration will become:
+</p>
+
+<pre style="color:black"><code data-language="javascript">
+  kineval.motion_plan[kineval.motion_plan_traversal_index]
+</code></pre>
+
+<p>
+<b>Note:</b> we are <b>NOT</b> using robot.joints[...].control to execute the found path of the robot.  Although this can be done, the collision system does not currently test for configurations that occur due to the motion between configurations.
+</p>
+
+<p>
+  The result of your RRT-Connect implementation in configuration space should look similar to this path found in the worlds/world_s.js world:
+</p>
+<img src="images/asgn6_scurve_2016.png" width=100%>
+
+<h3>Testing</h3>
+
+<p>
+Make sure to test all provided robot descriptions from a reasonable set of initial configurations within all of the provided worlds, ensuring that:
+</p>
+
+<p>
+<ul>
+<li> <p>a valid non-colliding path is found and can be traversed,</p></li>
+<li> <p>the robot does not to take steps longer than 1 unit,</p></li>
+<li> <p>the robot base does not move outside the X-Z plane.  Specifically, the base should not translate along the Y axis, and should not rotate about the X and Z axes.</p></li>
+</ul>
+</p>
+
+
+<h3>Warning: Respect Configuration Space</h3>
+
+<p>
+The planner should produce a collision-free path in configuration space (over all robot DOFs) and not just the movement of the base on the ground plane.  If your planner does not work in configuration space, it is sure to fail tests used for grading.
+</p>
+
+<h3> Graduate Section Requirement</h3>
+
+<p>
+In addition to the requirements above, students in the graduate section must also implement the <a href="http://dspace.mit.edu/openaccess-disseminate/1721.1/63170">RRT-Star</a> motion planning algorithm for the 2D search canvas. You will need to complete the iterateRRTStar() function stencil in project_pathplan/rrt.js for this feature. Part of this assignment is an exercise in how to conceptualize implementation details of an algorithm from a robotics paper. Because of this, you will need to refer to the linked paper for details on how to implement the RRT-Star algorithm. <b>Note:</b> The course staff will not provide assistance with RRT-Star, so we strongly encourage high-level discussion of the algorithm among students on the assignment channel or in pod meetings.
+</p>
+
+<!--
+<p>
+<ul>
+<li> <p>joint limits for the different joint types are respected, and </p></li>
+<li> <p>the "fetch" robot should be able to navigate all of the provided worlds.</p></li> 
+</ul>
+</p>
+-->
+
+<h4> Advanced Extensions</h4>
+
+<p>
+Of the 4 possible advanced extension points, one additional point for this assignment can be earned by adding the capability of motion planning to an arbitrary robot configuration goal. 
+</p>
+<p>
+Of the 4 possible advanced extension points, two additional points for this assignment can be earned by using the A-star algorithm for base path planning in combination with RRT-Connect for arm motion planning. 
+</p>
+<p>
+Of the 4 possible advanced extension points, one additional point for this assignment can be earned by writing a collision detection system for two arbitrary triangles in 2D using a JavaScript/HTML5 canvas element. 
+</p>
+<p>
+Of the 4 possible advanced extension points, two additional points for this assignment can be earned by writing a collision detection system for two arbitrary triangles in 3D using JavaScript/HTML5 and threejs or a canvas element. 
+</p>
+<p>
+Of the 4 possible advanced extension points, four additional points for this assignment can be earned by implementation of triangle-triangle tests for collision detection between robot and planning scene meshes. 
+</p>
+<p>
+Of the 4 possible advanced extension points, three additional points for this assignment can be earned by implementation of cubic or quintic polynomial interpolation (Spong Ch. 5.5.1 and 5.5.2) across configurations returned in a computed motion plan.
+</p>
+<p>
+Of the 4 possible advanced extension points, four additional points for this assignment can be earned by implementing an approved research paper describing a motion planning algorithm. 
+</p>
+
+
+
+
+<!--
+<h3>Highly recommended: start with HTML5 Canvas Stencil </h3>
+
+<img width=100% src="images/asgn6_rrt_canvas_stencil_small.png">
+
+<p>
+Using the browser for as a development environment has many benefits.  However, when coding mistakes occur, it will make the browser lock up and be completely unusable.  Such mistakes can be especially difficult to debug when the overhead of rendering with threejs is involved.  
+</p>
+
+<p>
+To help you get started, the path planning code stencil in the "search_canvas" directory has entry points for developing your core RRT routines.  This stencil will allow you to implement the RRT-Connect algorithm in simplified 2D worlds with provided routines for visualization and collision.  Because the RRT is invariant across configuration spaces, an RRT developed for the 2D Canvas world should easily port to the N-D threejs world, with minor changes for invoking drawing routines.
+</p>
+
+<p>
+  -->
+
+<h3>Project Submission</h3>
+<p>
+For turning in your assignment, ensure your completed project code has been committed and pushed to the <i>master</i> branch of your repository.  
+<p>
+
+<!--
+(comment marker end 9) -->
+
+<br>
+<br>
+
+<img width=100% src="images/um_progress_fetch.jpeg">
+
+
+        <!-- TYPEKIT -->
+        <script type="text/javascript" src="resources/ajf8ggy.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript" src="resources/rainbow_github.min.js"></script>
+        <script type="text/javascript" src="resources/rainbow_github_generic.js"></script>
+<!--
+        <script type="text/javascript" src="//use.typekit.net/ajf8ggy.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script src="https://rawgithub.com/ccampbell/rainbow/master/js/rainbow.min.js"></script>
+        <script src="https://rawgithub.com/ccampbell/rainbow/master/js/language/generic.js"></script>
+-->
+
+</body>
+
+</html>
