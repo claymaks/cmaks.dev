@@ -10,24 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_projects/2020-10-20-weather.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_projects/2020-12-20-eecs367.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_projects/2021-01-03-collision.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/html/eecs367_assignments.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/pro/collisions/all_center.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/pro/collisions/all_no_decel.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/pro/collisions/collisions.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/pro/collisions/multi_point_no_decel.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/pro/collisions/one_point_center.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/pro/weather/dash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/pro/weather/wiring.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2015-11-01-halflife.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2015-11-01-halflife.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2019-05-13-Data-Analysis.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2019-05-13-Data-Analysis.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2019-07-02-huffman.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2019-07-02-huffman.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2019-12-01-word-tree.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2019-12-01-word-tree.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2020-05-01-dario.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2020-05-01-dario.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2021-01-01-fisher-agv.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2021-01-01-fisher-agv.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2020-12-20-eecs367.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2020-12-20-eecs367.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2021-01-01-fisher-agv.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2021-01-13-fisher-agv.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +87,7 @@
       <workItem from="1595991263910" duration="6000" />
       <workItem from="1595994130898" duration="1955000" />
       <workItem from="1615445576041" duration="640000" />
-      <workItem from="1615446425113" duration="3145000" />
+      <workItem from="1615446425113" duration="3462000" />
     </task>
     <servers />
   </component>
