@@ -32,7 +32,7 @@ title: about
         <a href="https://www.linkedin.com/in/cmaks" target="_blank"><img src="/assets/img/about/linkedin.svg" height="20px" alt="linkedin"/></a>
     </div>
     <div class = "column">  
-        <a href="/assets/pdf/Maksymiuk_Clayton_2020_09_16.pdf" target="_blank"><img src="/assets/img/about/resume.svg" height="20px" alt="resume"/></a>
+        <a href="/assets/pdf/ClaytonMaksymiukResume.pdf" target="_blank"><img src="/assets/img/about/resume.svg" height="20px" alt="resume"/></a>
     </div>
     <div class = "column">  
         <a href="mailto:cmaks@umich.edu"><img src="/assets/img/about/mail.svg" height="20px" alt="mail"/></a>
@@ -42,23 +42,22 @@ title: about
 Clayton Maksymiuk<br>
 </div>
 <div style="text-align: center; font-size: 15px;">
-Computer Science Engineering major, Mathematics minor @ the University of Michigan
+Computer Science Engineering @ the University of Michigan
 </div>
 
 ### Hi, I'm Clay!
-I’m a Junior studying Computer Science and Mathematics at the 
+I’m a Junior studying Computer Science at the 
 University of Michigan. I started programming PLC-based factory 
 machines freshman year of high school and quickly developed a 
 passion for improving efficiency. My background is in robotics 
-and autonomous systems, and I am currently working at Fisher 
-Dynamics, leading the development of their <a href="/projects/fisher-agv" >
+and autonomous systems, previously spending time at Fisher 
+Dynamics where I lead the development of their <a href="/projects/fisher-agv" >
 autonomously guided vehicle system</a>. Fixated on automating away my life, I founded <a href="/projects/dario" >Dario LLC</a> 
 with my roommates to better schedule meetings.  
 
 I’m incredibly passionate about the work that I do and love 
 working with people who allow that passion to grow. I’m 
 currently looking for opportunities that will allow me to 
-develop my abilities using computer vision and programming 
-autonomous systems.
+explore embedded and autonomous systems.
 
 <a href="mailto:cmaks@umich.edu">Contact me</a> if you'd like to work together on a project!

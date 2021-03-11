@@ -7,7 +7,10 @@ category: python, opencv
 ---
 
 
-In the midst of Zoom meetings, I found myself thinking more and more about the virtual backgrounds and how they are rendered.  After lots of thinking, I decided I first wanted to try a different project to see how OpenCV worked.  I built this drawing tool while live-streaming to my high school robotics team, which made it all the more fun when my code did not run.
+In the midst of Zoom meetings, I found myself thinking more and more about the virtual backgrounds and how they are 
+rendered.  After lots of thinking, I decided I first wanted to try a different project to see how OpenCV worked.  
+I built this drawing tool while live-streaming to my high school robotics team, which made it all the more fun when my 
+code did not run.
 
 <style>
 html, body {

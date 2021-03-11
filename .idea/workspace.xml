@@ -10,7 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_projects/2021-01-01-fisher-agv.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2019-06-01-bezier.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/_archived_projects/2019-06-01-bezier.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2020-01-01-http-dp.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/_archived_projects/2020-01-01-http-dp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2020-02-02-fisher-agv.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2020-04-18-draw-with-objects.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2020-04-18-draw-with-objects.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,27 +40,24 @@
   <component name="ProjectId" id="1XKaJHfSw38n6hTTvUMSjYJV0ze" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img/about" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/img/pro/dario" />
-      <recent name="$PROJECT_DIR$/assets/img/pro" />
-      <recent name="$PROJECT_DIR$/assets/img/scout" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/img/about" />
       <recent name="$PROJECT_DIR$/assets/img/pro/dario" />
@@ -61,7 +65,14 @@
       <recent name="$PROJECT_DIR$/_includes" />
       <recent name="$PROJECT_DIR$/_layouts" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_projects/_archived_projects" />
+      <recent name="$PROJECT_DIR$/assets/img/pro/dario" />
+      <recent name="$PROJECT_DIR$/assets/img/pro" />
+      <recent name="$PROJECT_DIR$/assets/img/scout" />
+    </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -79,20 +90,22 @@
       <workItem from="1595988622309" duration="1942000" />
       <workItem from="1595991263910" duration="6000" />
       <workItem from="1595994130898" duration="1955000" />
+      <workItem from="1615445576041" duration="640000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="380" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1595994131963">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="380" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1595994131963" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1595990203338">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1595990203338" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
