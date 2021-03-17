@@ -30,7 +30,7 @@ comments:
     clientSecret: "3dfdadb3c73f77ff6ba1686da5a5d48dc7deaadc"
     repository  : "cmaks.dev"
     owner       : "claymaks"
-    admin: # Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
+    admin:
       - "claymaks"
 
 
@@ -94,3 +94,8 @@ defaults:
       path: "assets/images"
     values:
       image: true
+
+  - scope:
+      path: "_projects/2021-01-13-fisher-agv-release.md"
+    values:
+      sitemap: false

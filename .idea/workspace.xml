@@ -10,8 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_projects/2021-01-13-fisher-agv-release.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2020-12-20-eecs367.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2020-12-20-eecs367.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2021-01-13-fisher-agv.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2021-01-13-fisher-agv.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/pdf/ClaytonMaksymiukResume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/pdf/ClaytonMaksymiukResume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/atom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/atom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/ascii-converter.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/ascii-converter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/bezier.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/data-analysis.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/data-analysis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/fisher-agv.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/fisher-agv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/halflife.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/halflife.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/http-dp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/huffman.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/huffman.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/scout.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/scout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/scripts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/word-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/word-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +53,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1XKaJHfSw38n6hTTvUMSjYJV0ze" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,23 +71,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_projects" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/html" />
       <recent name="$PROJECT_DIR$/_projects" />
+      <recent name="$PROJECT_DIR$/_layouts" />
+      <recent name="$PROJECT_DIR$/assets/html" />
       <recent name="$PROJECT_DIR$/assets/img/pro" />
       <recent name="$PROJECT_DIR$/assets/img/about" />
-      <recent name="$PROJECT_DIR$/assets/img/pro/dario" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
@@ -86,7 +117,9 @@
       <workItem from="1595991263910" duration="6000" />
       <workItem from="1595994130898" duration="1955000" />
       <workItem from="1615445576041" duration="640000" />
-      <workItem from="1615446425113" duration="3860000" />
+      <workItem from="1615446425113" duration="4149000" />
+      <workItem from="1615931929998" duration="2199000" />
+      <workItem from="1615935438731" duration="4528000" />
     </task>
     <servers />
   </component>
