@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/about</loc>
-<lastmod>2021-03-16T21:25:59-04:00</lastmod>
+<lastmod>2021-05-06T15:35:56-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/projects</loc>
-<lastmod>2021-03-16T21:25:59-04:00</lastmod>
+<lastmod>2021-05-06T15:35:56-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/projects/halflife</loc>
@@ -23,6 +23,10 @@
 <url>
 <loc>http://localhost:4000/projects/data-analysis</loc>
 <lastmod>2019-05-13T00:00:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/projects/bezier</loc>
+<lastmod>2019-06-01T00:00:00-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/projects/ascii-converter</loc>

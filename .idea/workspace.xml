@@ -10,30 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f233531c-6121-4a4d-8766-32cbb034317e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_projects/2021-01-13-fisher-agv-release.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/pro/bezier/bezier.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2021-01-13-fisher-agv.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2021-01-13-fisher-agv.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/_archived_projects/2019-06-01-bezier.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2019-06-01-bezier.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/pdf/ClaytonMaksymiukResume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/pdf/ClaytonMaksymiukResume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/img/pro/bezier/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/pro/bezier/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/img/pro/bezier/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/pro/bezier/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/img/pro/bezier/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/pro/bezier/3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/atom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/atom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/ascii-converter.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/ascii-converter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/bezier.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/data-analysis.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/data-analysis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/fisher-agv.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/fisher-agv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/halflife.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/halflife.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/http-dp.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/huffman.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/huffman.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/scout.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/scout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/scripts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/word-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/word-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/pro/bezier/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/pro/bezier/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/pro/bezier/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/pro/bezier/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/pro/bezier/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/pro/bezier/3.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img/pro/bezier" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -84,18 +73,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img/pro/bezier" />
       <recent name="$PROJECT_DIR$/_projects" />
       <recent name="$PROJECT_DIR$/_layouts" />
       <recent name="$PROJECT_DIR$/assets/html" />
       <recent name="$PROJECT_DIR$/assets/img/pro" />
-      <recent name="$PROJECT_DIR$/assets/img/about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img/pro/bezier" />
+      <recent name="$PROJECT_DIR$/_projects" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/assets/img/pro/weather" />
       <recent name="$PROJECT_DIR$/_projects/_archived_projects" />
-      <recent name="$PROJECT_DIR$/assets/img/pro/dario" />
-      <recent name="$PROJECT_DIR$/assets/img/pro" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -119,7 +108,8 @@
       <workItem from="1615445576041" duration="640000" />
       <workItem from="1615446425113" duration="4149000" />
       <workItem from="1615931929998" duration="2199000" />
-      <workItem from="1615935438731" duration="4528000" />
+      <workItem from="1615935438731" duration="4616000" />
+      <workItem from="1620324525963" duration="2193000" />
     </task>
     <servers />
   </component>
